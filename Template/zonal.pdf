@@ -1,0 +1,508 @@
+<meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<style media="all" type="text/css">
+  #lineItem tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+</style>
+<div>
+  <table style="width: 100%">
+    <tbody>
+      <tr>
+        <th style="text-align: left; width: 33%">
+          <p style="margin: 0; font-size: 7pt">
+            <img
+              style="height: 45px; width: 130px"
+              src="https://i.imgur.com/z0MausS.png"
+              alt=""
+            />
+            <br /><br />
+            CR NO : 44087 Po Box.33172 <br />
+            Doha Qatar <br />OFFICE <br />Phone:+974 44651315,44581904<br />fax:+974
+            44672140 <br />SHOWROOM <br />
+            ph.:+97440378211,40374924 <br />
+            Email:mail@zonaltrading.com <br />www.zonaltrading.com
+          </p>
+        </th>
+        <td style="width: 33%; text-align: center; padding-bottom: 100px">
+          <img
+            style="height: 65px; width: 85px"
+            src="https://i.imgur.com/osWBCkR.png"
+            alt=""
+          />
+        </td>
+        <th style="text-align: right; width: 33%">
+          <p style="margin: 0; font-size: 7pt">
+            <img
+              style="height: 45px; width: 130px"
+              src="https://i.imgur.com/ipfiYRO.png"
+              alt=""
+            />
+            <span style="color: darkblue"></span><br /><br />
+            رقم السجل التجاري:٤٤۰۸۷ صندوق البريد:۳۳۱۷۲<br />
+            الدوحة قطر
+            <br />مكتب<br />هاتف:۹۷٤٤٤٦٥۱۳۱٥,٤٤٥۸۱۹۰٤<br />فاكس:۹۷٤٤٤٦۷۲۱٤۰
+            <br />صالة عرض <br />
+            هاتف:۹۷٤٤۰۳۷۸۲۱۱,٤۰۳۷٤۹۲٤<br />
+            mail@zonaltrading.com:بريد إلكتروني <br />
+            www.zonaltrading.com
+          </p>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <table style="width: 100%; font-size: 9pt">
+      <tbody>
+        <tr>
+          <th style="text-align: left; width: 33%">
+            <br />REF NO:-%Ref.Number%
+          </th>
+          <th style="color: darkblue; width: 34%">
+            <font size="5"><u> QUOTATION </u></font>
+          </th>
+          <th style="text-align: right"><br />DATE:%EstimateDate%</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <table style="width: 100%; font-size: 9pt">
+      <tbody>
+        <tr>
+          <td style="text-align: left">
+            <span style="font-weight: 700; text-align: right"
+              >Quote Ref:%EstimateNumber%</span
+            ><span style="color: darkblue"
+              ><b><br /><br />M/S.</b></span
+            ><font color="#0000ff">%CustomerName%</font
+            ><span style="color: blue; white-space: pre"> </span><br /><font
+              color="#0000ff"
+              >%CustomerBAddress%</font
+            ><br /><font color="#0000ff">%CustomerBCity%%CustomerBCountry%</font
+            ><br /><font color="#0000ff">Phone: -%CustomerBPhone%</font
+            ><br /><br />
+          </td>
+          <th style="text-align: right"><br /><br /><br /></th>
+        </tr>
+        <tr>
+          <td style="text-align: left; color: blue"><br /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <p style="margin: 0; font-size: 9pt">
+      Dear Sir, <br />
+      <span style="font-size: 9pt; text-decoration-style: dotted"
+        ><b
+          >Subject: -
+          <span style="text-decoration: underline; text-decoration-style: solid"
+            >${estimate.cf_subject_in_template}</span
+          ></b
+        >
+      </span>
+    </p>
+  </div>
+  <div>
+    <p style="font-size: 9pt">
+      We are very much thankful for giving us an opportunity to submit Quotation
+      for above said work. So, we are here by submitting our best offer for your
+      perusal. Scope and work details are as mentioned below.
+    </p>
+  </div>
+</div>
+<div style="margin-top: 20px; width: 100%"><span></span></div>
+<table
+  style="
+    width: 100%;
+    margin-top: 20px;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+  "
+  class="pcs-itemtable"
+  border="1"
+  cellpadding="0"
+  cellspacing="0"
+>
+  <thead>
+    <tr style="height: 32px">
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(182, 216, 230);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 3%;
+          height: 35px;
+        "
+        align="left"
+      >
+        <b>S.No</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(182, 216, 230);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 20%;
+        "
+        align="left"
+      >
+        <b>Description</b>
+      </td>
+      <td
+        align="right"
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(182, 216, 230);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 8%;
+        "
+      >
+        <b>Qty</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(182, 216, 230);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 4%;
+        "
+        align="right"
+      >
+        <b>Unit</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(182, 216, 230);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 5%;
+        "
+        align="right"
+      >
+        <b>Amount</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(182, 216, 230);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 6%;
+        "
+        align="right"
+      >
+        <b>Total Price</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody id="lineitem">
+    <tr>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: left;
+          word-wrap: break-word;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty">%SiNo%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: left;
+          word-wrap: break-word;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty">%ItemName%%ItemDescription%</span> <br />
+      </td>
+      <td
+        valign="top"
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+        "
+      >
+        <span id="tmp_item_qty">%ItemQty%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+        "
+        valign="top"
+      >
+        %UsageUnit%
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_rate">%ItemRate%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          text-align: right;
+          padding: 10px 10px 10px 5px;
+          word-wrap: break-word;
+        "
+        valign="top"
+      >
+        %ItemAmount% <br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="width: 100%">
+  <div style="width: 45%; font-size: 9pt; float: left">
+    <div style="white-space: pre-wrap"></div>
+  </div>
+  <div style="width: 100%; float: right">
+    <table
+      style="
+        font-size: 9pt;
+        color: #000000;
+        background-color: #ffffff;
+        border-spacing: 0;
+        border-collapse: collapse;
+      "
+      border="1"
+      cellspacing="0"
+      width="100%"
+    >
+      <tbody>
+        <tr style="height: 30px; font-size: 9pt; color: black; width: 100%">
+          <td style="padding: 5px 10px 5px 0" align="right" valign="middle">
+            <b>Total</b>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="width: 120px; padding: 10px 10px 10px 5px"
+            align="right"
+            valign="middle"
+          >
+            %EstimateTotal%
+          </td>
+        </tr>
+        <tr style="height: 30px; font-size: 9pt; color: black; width: 100%">
+          <td
+            colspan="2"
+            style="padding: 5px 10px 5px 0"
+            align="left"
+            valign="middle"
+          >
+            <b>In words:</b>%TotalInWords%
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="clear: both"></div>
+  <div>
+    <h3
+      style="
+        margin: 0;
+        text-decoration: underline;
+        text-decoration-style: solid;
+      "
+    >
+      Scope of work.
+    </h3>
+    <p style="margin: 0; font-size: 9pt">%Notes%</p>
+  </div>
+  <br />
+  <div>
+    <h3
+      style="
+        text-decoration: underline;
+        text-decoration-style: solid;
+        margin: 0;
+      "
+    >
+      Client’s Scope.
+    </h3>
+    <p style="margin: 0; font-size: 9pt">
+      ❖Any kind of permits, Gate passes, consultant and government approvals
+      should be provided. <br />
+      ❖Safety induction. <br />%TermsAndCondition%
+    </p>
+    <p style="margin: 0; font-size: 9pt"><br /></p>
+  </div>
+  <div>
+    <table style="width: 70%; text-align: left; font-size: 9pt">
+      <tbody>
+        <tr>
+          <th
+            style="
+              width: 30%;
+              text-decoration: underline;
+              text-decoration-style: solid;
+            "
+          >
+            Payment terms
+          </th>
+          <td>:%PaymentTerms%</td>
+        </tr>
+        <tr>
+          <th style="text-decoration: underline; text-decoration-style: solid">
+            Completion Period
+          </th>
+          <td>:${estimate.cf_completion_period}</td>
+        </tr>
+        <tr>
+          <th style="text-decoration: underline; text-decoration-style: solid">
+            Offer Validity
+          </th>
+          <td>: ${estimate.cf_offer_validy}.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <p align="justify" style="font-size: 9pt">
+      We thank you for the opportunity given to us and hope that our offer meets
+      your requirements. Further, if you need any clarification please do not
+      hesitate to contact the undersigned.&nbsp;
+    </p>
+    <p align="justify" style="font-size: 9pt">
+      Yours Truly, <br />For&nbsp;<span style="text-align: start"
+        >ZONAL TRADING &amp; CONTRACTING W.LL</span
+      ><br />
+      <br />
+      <br />
+      <span style="float: right">
+        <table
+          border="0"
+          style="float: right; width: 100%; border-collapse: collapse"
+        >
+          <tbody>
+            <tr>
+              <td
+                style="
+                  text-decoration: overline;
+                  text-decoration-style: solid;
+                  text-align: center;
+                  font-size: 9pt;
+                "
+              >
+                Customer’s Approval
+              </td>
+            </tr>
+          </tbody>
+        </table> </span
+      ><span style="width: 50%; float: left">Rejeesh Kumar </span><br />
+      General Manager, <br />
+      E-mail: <a href="rejeesh@zonaltrading.com">rejeesh@zonaltrading.com</a
+      ><br />
+      Mob: +974-66968166
+    </p>
+    <p align="justify" style="font-size: 9pt"><br /></p>
+    <p align="justify" style="font-size: 9pt"><br /></p>
+  </div>
+  <div>
+    <h3 style="text-decoration: underline; text-decoration-style: double">
+      <font size="3" ><br /></font>
+    </h3>
+    <h3 style="text-decoration: underline; text-decoration-style: double">
+      <font size="3" > BANK DETAILS </font>
+    </h3>
+    <table
+      border="1"
+      style="font-size: 9pt; border-collapse: collapse; width: 50%"
+    >
+      <tbody>
+        <tr>
+          <td style="width: 20%">Customer Name</td>
+          <td style="width: 50%">ZONAL TRADING &amp; CONTRACTING W.LL</td>
+        </tr>
+        <tr>
+          <td>A/C No</td>
+          <td>0250-100288-001</td>
+        </tr>
+        <tr>
+          <td>IBAN</td>
+          <td>QA06 QNBA 0000 0000 0250 1002 8800 1</td>
+        </tr>
+        <tr>
+          <td>Bank Name</td>
+          <td>QATAR NATIONAL BANK</td>
+        </tr>
+        <tr>
+          <td>CR No</td>
+          <td>44087</td>
+        </tr>
+        <tr>
+          <td>Swift Code No</td>
+          <td>QNBAQAQA</td>
+        </tr>
+        <tr>
+          <td>Branch Address</td>
+          <td>Corporate Ain Khalid, P.O. Box 1000, Doha-Qatar</td>
+        </tr>
+        <tr>
+          <td>Currency</td>
+          <td>QATARI RIYAL</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

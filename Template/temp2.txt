@@ -1,0 +1,648 @@
+<meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<style media="all" type="text/css">
+  #lineItem tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+</style>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100%
+    }
+
+    table td,
+    table th {
+        padding: 0 4px
+    }
+
+    .float-left {
+        float: left
+    }
+
+    .float-right {
+        float: right
+    }
+
+    .text-align-right {
+        text-align: right
+    }
+
+    .text-align-left {
+        text-align: left
+    }
+
+    .text-align-center {
+        text-align: center
+    }
+
+    .breakrow-inside {
+        page-break-inside: avoid
+    }
+
+    .breakrow-after {
+        page-break-after: auto
+    }
+
+    .ar-content {
+        direction: rtl
+    }
+
+    .einv-container::after {
+        display: table;
+        content: ' ';
+        clear: both
+    }
+
+    .inline {
+        display: inline-block
+    }
+
+    .v-top {
+        vertical-align: top
+    }
+
+    .einv-section-margin {
+        margin-top: 20px
+    }
+
+    .einv-details-table td,
+    .seller-buyer-table td {
+        word-wrap: break-word
+    }
+
+    .pcs-template-header {
+        padding: 0 0.4in 0 0.55in;
+        height: 0.7in
+    }
+
+    .pcs-header-content {
+        font-size: 9pt;
+        color: rgb(51, 51, 51);
+        background-color: rgb(255, 255, 255)
+    }
+
+    .einvoice-template-body {
+        font-family: Lateef, 'WebFont-Lateef';
+        font-size: 9pt;
+        margin-bottom: 0.7in;
+        color: rgb(0, 0, 0)
+    }
+
+    .einvoice-header {
+        font-size: 12pt;
+        color: rgb(102, 102, 102);
+        font-weight: 500
+    }
+
+    .einv-details,
+    .einv-qr {
+        padding: 0;
+        width: 50%
+    }
+
+    .einv-details {
+        vertical-align: middle
+    }
+
+    .einv-details-table {
+        margin: 25px 0;
+        font-size: 9pt
+    }
+
+    .einv-details-table,
+    .seller-buyer-table,
+    .pcs-itemtable,
+    .pcs-totals,
+    .lineitem-caption {
+        border: 2px solid rgb(183, 183, 183)
+    }
+
+    .details-partition {
+        border-left: 2px solid rgb(183, 183, 183) !important
+    }
+
+    .pcs-status {
+        font-size: 12pt;
+        border: 3px solid;
+        padding: 3px 8px
+    }
+
+    .seller-buyer-table {
+        font-size: 9pt
+    }
+
+    .seller-buyer-table tr {
+        page-break-inside: avoid;
+        page-break-after: auto
+    }
+
+    .seller-buyer-table-head {
+        color: rgb(255, 255, 255);
+        background-color: rgb(153, 153, 153)
+    }
+
+    .lineitem-table-header,
+    .total-section-header {
+        background-color: rgb(153, 153, 153);
+        color: rgb(255, 255, 255)
+    }
+
+    .details-table-body td,
+    .seller-buyer-table-body td,
+    .pcs-itemtable td,
+    .pcs-totals td {
+        border: 1px solid rgb(0, 0, 0)
+    }
+
+    .details-inner-partition {
+        border-left: 1px solid rgb(143, 143, 143)
+    }
+
+    .einvoice-description {
+        width: 50%;
+        margin: 10px 0 10px auto;
+        word-wrap: break-word;
+        font-size: 9pt;
+        line-height: 13px
+    }
+
+    .pcs-itemtable {
+        border-top: 0
+    }
+
+    .pcs-itemtable-header {
+        font-size: 9pt;
+        color: rgb(255, 255, 255);
+        background-color: rgb(114, 114, 114)
+    }
+
+    .wordwrap-breakword {
+        word-wrap: break-word
+    }
+
+    .lineitem-caption {
+        width: 100%;
+        padding: 0;
+        border-bottom: 0;
+        box-sizing: border-box
+    }
+
+    .caption-elements {
+        box-sizing: border-box;
+        width: 49%
+    }
+
+    .pcs-item-row {
+        font-size: 9pt;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-bottom: none;
+        padding: 3px 4px;
+        vertical-align: top;
+        word-wrap: break-word
+    }
+
+    .pcs-itemtable-header {
+        border: 1px solid rgb(183, 183, 183)
+    }
+
+    .pcs-itemheader-section {
+        padding: 5px 0 5px 10px
+    }
+
+    .pcs-lineitem-column {
+        text-align: right;
+        word-wrap: break-word;
+        padding: 0 3px
+    }
+
+    .pcs-itemvalue-section {
+        padding-left: 3px
+    }
+
+    .pcs-item-sku {
+        margin-top: 2px;
+        font-size: 10px;
+        color: rgb(68, 68, 68)
+    }
+
+    .pcs-item-desc {
+        color: rgb(51, 51, 51);
+        font-size: 9pt
+    }
+
+    .item-details-inline {
+        display: inline-block;
+        margin: 0 10px;
+        vertical-align: top;
+        max-width: 70%
+    }
+
+    .pcs-totals {
+        font-size: 9pt;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255)
+    }
+
+    .pcs-totals td {
+        vertical-align: middle
+    }
+
+    .pcs-totals .total-section-partition {
+        border-left: 1px solid rgb(143, 143, 143) !important
+    }
+
+    .pcs-notes {
+        font-size: 9pt
+    }
+
+    .pcs-terms {
+        font-size: 9pt
+    }
+
+    .pcs-template-footer {
+        height: 0.7in;
+        font-size: 6pt;
+        color: rgb(170, 170, 170);
+        padding: 0 0.4in 0 0.55in;
+        background-color: rgb(255, 255, 255)
+    }
+
+    .pcs-taxtable-header {
+        font-size: 9pt;
+        color: rgb(255, 255, 255);
+        background-color: rgb(114, 114, 114)
+    }
+
+    .subject-block {
+        margin-top: 20px
+    }
+
+    .subject-block-value {
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        line-height: 14pt;
+        margin-top: 5px
+    }
+
+    .pcs-documentqr-block {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        page-break-inside: avoid;
+        width: 72%
+    }
+
+    .pcs-documentqr-inner {
+        padding: 8px;
+        display: table;
+        table-layout: fixed;
+        background: rgb(245, 244, 243);
+        border-radius: 7px
+    }
+
+    .pcs-documentqr-img {
+        width: 90px;
+        display: table-cell;
+        vertical-align: top
+    }
+
+    .pcs-documentqr-desc {
+        display: table-cell;
+        word-wrap: break-word;
+        padding-left: 8px;
+        vertical-align: middle
+    }
+</style>
+<style>
+    .pcs-itemtable-header {
+        font-size: 7pt;
+        color: #ffffff;
+        background-color: rgb(40, 149, 192);
+    }
+
+    .pcs-entity-title {
+        font-size: 18pt;
+    }
+
+    .einv-details-table {
+        margin: 5px 0;
+        font-size: 9pt;
+    }
+
+    .einv-section-margin {
+        margin-top: 5px
+    }
+
+    .details-table-body td {
+        border: 0px
+    }
+
+    .pcs-orgname {
+        font-size: 9pt;
+        color: #333333;
+    }
+
+    .pcs-label {
+        font-size: 10pt;
+        color: #333333;
+    }
+
+    .pcs-totals {
+        border: 2px solid rgb(0, 0, 0)
+    }
+
+    .pcs-itemtable {
+        border: 1px solid rgb(0, 0, 0)
+
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: auto;
+    }
+    body{
+        height: 100%;
+        width: auto;
+    }
+</style>
+
+<div style="font-family: &quot;Open Sans&quot;; color: rgb(51, 51, 51);">
+    <div >
+        <div style="font-size: 10pt; display: table; width: 100%;">
+            <div style="float:left;width:60%;">
+                <div> %ScaledLogoImage% </div> <b>%CompanyName%</b> <br> <b>مؤسسة بلس تو للتجارة</b>
+                <div> <span class="pcs-label"><span style="white-space: pre-wrap;word-wrap: break-word;"
+                            id="tmp_org_address">VAT: 300421252700003<br>CR#: 4030212161</span> </span> </div>
+            </div>
+            <div style="float:right;width:40%;text-align:right; margin-top: 50px;"> <span style="font-size: 18pt;color: #000000;">Tax
+                    Invoice - فاتورة ضريبة</span>
+                <div style="clear:both;margin-top:20px;"><br> </div>
+            </div>
+        </div>
+        <table style="width:100%;table-layout: fixed;">
+            <tbody>
+                <tr>
+                  <td style="vertical-align: top; width:40%;"> <span
+                            class="pcs-orgname"><br><b style="margin: 0; padding: 0;"> </b> <br><b style="margin: 0; padding: 0;"><b>Contact Name </b><br style="padding: 0; margin: 0;"> %ContactCompanyName%</b></span> <span class="pcs-label"> <span
+                                style="white-space: pre-wrap;word-wrap: break-word;"
+                                id="tmp_org_address"><br>%CustomerBAddress%<br>%CustomerBCity%
+                                %CustomerBCode%<br>%CustomerBCountry%<br>VAT No.: %ContactTRN% </span> </span> </td>
+                    <td class="einv-qr" style="vertical-align: top; width:20%;">%EInvoiceQRImg% </td>
+                    <td style="width:40%;" class="text-align-right v-top"> <span
+                            class="pcs-orgname"><br><b>اسم جهة الاتصال</b><br><b style="margin: 0; padding: 0;">%CustomerNameSecondary%</b></span> <span class="pcs-label"> <span
+                                style="white-space: pre-wrap;word-wrap: break-word;"
+                                id="tmp_org_address"><br>%CustomerBAddressSecondary%<br>
+                                %CustomerBCitySecondary%<br>%CustomerBCountrySecondary%<br>${invoice.cf_arabic_amount_in_words}:ضريبة القيمة المضافة لا
+                                 </span> </span> </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="einv-details">
+                        <table style="border: 0px;" class="einv-details-table">
+                            <tbody class="details-table-body">
+                                <tr class="einv-details-row">
+                                    <td width="20%">
+                                        <font size="1">INVOICE REF</font>
+                                    </td>
+                                    <td style="border-left:1px solid;" width="31%">
+                                        <font size="1">%InvoiceNumber%</font>
+                                    </td>
+                                    <td class="text-align-right ar-content" style="border-left:1px solid;" width="31%">
+                                        <font size="1">%InvoiceNumber%</font>
+                                    </td>
+                                    <td class="text-align-right ar-content" width="18%">
+                                        <font size="1">رقم الفاتورة</font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <font size="1">INVOCE DATE</font>
+                                    </td>
+                                    <td style="border-left:1px solid;">
+                                        <font size="1">%InvoiceDate%</font>
+                                    </td>
+                                    <td style="border-left:1px solid;" class="text-align-right ar-content">
+                                        <font size="1">%InvoiceDate%</font>
+                                    </td>
+                                    <td class="text-align-right ar-content">
+                                        <font size="1">تاريخ الفاتورة</font>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <font size="1">PAYMENT TERMS</font>
+                                    </td>
+                                    <td style="border-left:1px solid;">
+                                        <font size="1">${invoice.cf_payment_terms}</font>
+                                    </td>
+                                    <td style="border-left:1px solid;" class="text-align-right ar-content">
+                                        <font size="1">${invoice.cf_payment_terms}</font>
+                                    </td>
+                                    <td class="text-align-right ar-content">
+                                        <font size="1">مهلة الدفع</font>
+                                    </td>
+                                </tr>
+                               
+                                <tr>
+                                    <td>
+                                        <font size="1">PO Number</font>
+                                    </td>
+                                    <td style="border-left:1px solid;">
+                                        <font size="1">%P.O.Number%</font>
+                                    </td>
+                                    <td style="border-left:1px solid;" class="text-align-right ar-content">
+                                        <font size="1">%P.O.Number%</font>
+                                    </td>
+                                    <td class="text-align-right ar-content">
+                                        <font size="1">بو ملاحظة</font>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="font-size: 10pt; margin-top: 10px; width: 100%;"> <span></span> </div>
+        <table
+            style="font-size: 10pt; width: 100%; margin-top: 10px; table-layout: fixed; border-spacing: 0px; border-collapse: collapse;"
+            class="pcs-itemtable" border="0" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr class="breakrow-after" style="height:22px;">
+                    <th style="padding: 5px;width: 7%;"
+                        class="pcs-itemtable-header wordwrap-breakword text-align-center">
+                        <div>SL NO</div>
+                    </th>
+                    <th style="padding: 5px;width: 48%;"
+                        class="pcs-itemtable-header wordwrap-breakword text-align-center">
+                        <div>ITEM DESCRIPTION</div>
+                    </th>
+                    <th style="padding: 5px;width: 15%;"
+                    class="pcs-itemtable-header wordwrap-breakword text-align-center">
+                    <div>QUANTITY</div>
+                    </th>
+                    <th style="padding: 5px;width: 15%;"
+                        class="pcs-itemtable-header wordwrap-breakword text-align-center">
+                        <div>AMOUNT</div>
+                    </th>
+                    <th style="padding: 5px;width: 15%;"
+                        class="pcs-itemtable-header wordwrap-breakword text-align-center">
+                        <div>VAT</div>
+                    </th>
+                    <th style="padding: 5px;width: 15%;"
+                        class="pcs-itemtable-header wordwrap-breakword text-align-center">
+                        <div>TOTAL PRICE (SAR)</div>
+                    </th>
+                </tr>
+                <tr class="breakrow-after" style="height:32px;">
+                    <th style="padding: 5px;width: 5%;"
+                        class="pcs-itemtable-header wordwrap-breakword text-align-center">
+                        <div class="ar-content">الرقم التسلسلي</div>
+                    </th>
+                    <th style="padding: 5px;width: 50%;"
+                        class="pcs-itemtable-header wordwrap-breakword text-align-center">
+                        <div class="ar-content">وصف البنود</div>
+                    </th>
+                    <th style="padding: 5px;width: 15%;"
+                    class="pcs-itemtable-header wordwrap-breakword text-align-center">
+                    <div class="ar-content">كمية</div>
+                </th>
+                    <th style="padding: 5px;width: 15%;"
+                        class="pcs-itemtable-header wordwrap-breakword text-align-center">
+                        <div class="ar-content">كمية</div>
+                    </th>
+                    <th style="padding: 5px;width: 15%;"
+                        class="pcs-itemtable-header wordwrap-breakword text-align-center">
+                        <div class="ar-content">ضريبة القيمة المضافة</div>
+                    </th>
+                    <th style="padding: 5px;width: 15%;"
+                        class="pcs-itemtable-header wordwrap-breakword text-align-center">
+                        <div class="ar-content">السعر الإجمالي (ريال سعودي)</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="lineitem">
+                <tr class="breakrow-inside breakrow-after">
+                    <td class="pcs-item-row pcs-itemvalue-section text-align-right" rowspan="1">%SiNo%
+                        &nbsp;&nbsp;&nbsp;</td>
+                    <td class="pcs-item-row pcs-itemvalue-section" rowspan="1">
+                        <div>
+                            <div><span id="tmp_item_description"
+                                    class="pcs-item-desc wordwrap-breakword white-space-prewrap">%ItemName% / %SecItemName% <br>%ItemDescription% 
+                                    </span>
+                                    
+                            </div>
+                        </div>
+                    </td>
+                    <td class="pcs-item-row pcs-itemvalue-section" rowspan="1">
+                        <div>
+                            <div><span id="tmp_item_description"
+                                    class="pcs-item-desc wordwrap-breakword white-space-prewrap">%ItemQty%</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="pcs-item-row text-align-right" rowspan="1"> <span
+                            id="tmp_item_rate">%TaxableAmount%</span> </td>
+                    <td class="pcs-item-row text-align-right" rowspan="1">
+                        <div id="tmp_item_tax_amount">%ItemTaxAmount%</div>
+                    </td>
+                    <td class="pcs-item-row text-align-right" rowspan="1"> <span
+                            id="tmp_item_amount">%ItemAmountIncTax%</span> </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="font-size: 10pt; width: 100%; margin-top: 1px;">
+            <div style="width: 45%;padding: 3px 10px 3px 3px;font-size: 9pt;float: left;">
+                <div style="white-space: pre-wrap;"></div>
+            </div>
+            <div class="breakrow-inside breakrow-after">
+                <table class="pcs-totals einv-section-margin" cellspacing="0" border="0" width="100%">
+                    <tbody class="breakrow-after">
+                        <tr>
+                            <td valign="middle" colspan="3"><b>TAXABLE AMOUNT - المبلغ الخاضع للضريبة:</b></td>
+                            <td class="text-align-right"><b>%TotalTaxableAmount%</b></td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" colspan="3"><b>VAT (15%) ضريبة القيمة المضافة:</b></td>
+                            <td class="pcs-lineitem-column"><b>%TaxTotal%</b></td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" colspan="3"><b>TOTAL - الاجمالي:</b></td>
+                            <td id="tmp_total" class="pcs-lineitem-column"><b>%InvoiceTotal%</b></td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" colspan="2">%TotalInWords%</td>
+                            <td id="tmp_total" class="pcs-lineitem-column" colspan="2">${invoice.cf_arabic_invoice}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div style="clear:both;margin-top:30px;width:100%;"> <label class="pcs-label" id="tmp_vat_summary_label"
+                style="font-size: 9pt;"><b>التفاصيل المصرفية / BANK DETAILS</b><hr  style="width: 175px;"></label>
+            <table style="border: 0px;" class="einv-details-table">
+                <tbody class="details-table-body">
+                    <tr class="einv-details-row">
+                        <td width="17%">ACCOUNT NAME / إسم الحساب</td>
+                        <td width="47%">: PLUS TWO TRADING EST.</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>BANK / بنك</td>
+                        <td>: Al Rajhi Bank</td>
+                       
+                    </tr>
+                    <tr>
+                        <td>ACCOUNT / حساب</BR></td>
+                        <td>: 129000010006086579829</td>
+                        
+                    </tr> 
+                   
+                    <tr>
+                        <td>IBAN / ايبان</td>
+                        <td>: SA8580000129608016579829 </td>
+                       
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </div><br>
+</div>
+<div></div>

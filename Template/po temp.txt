@@ -1,0 +1,621 @@
+<meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<style media="all" type="text/css">
+  #lineItem tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+</style>
+<div style="font-family: Open Sans; font-size: 10pt; color: hsl(0, 0%, 20%)">
+  <table
+    style="
+      width: 100%;
+      height: 100px;
+      font-size: 10pt;
+      border-collapse: collapse;
+      border-color: white;
+      border-left: none;
+      border-right: none;
+      
+    "
+  >
+    <tbody>
+      <tr>
+        <th style="font-family: Calibri; text-align: left">%ScaledLogoImage%</th>
+        <th></th>
+        <th style=" text-align: right; font-size: large">
+         <div style="font-family: Calibri;"> مؤسسة جمانه عبدالله محمد للخدمات اللوجستية </div>
+          <div style="font-family: Calibri; font-size:  medium; color: darkblue">
+            <i
+              >Jumana Abdullah Mohammed (JAM) <br />
+              Logistics Services Est</i
+            >
+            <div><i>(Inex Infratech Solutions)</i></div>
+          </div>
+          <div style="font-family: Calibri; color: darkblue; font-size: small">CR: 1011153166</div>
+          <div style=" font-family: Calibri;color: darkblue; font-size: small">
+            VAT:311676634100003
+          </div>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="margin: 0 auto; width: 50%; text-align: center">
+  <span style="font-family: Calibri; font-size: medium; color: darkblue"
+    >PURCHASE ORDER
+    <hr width="140px" color="darkblue" />
+  </span>
+</div>
+<div style="width: 100%">
+  <table
+    style="
+      text-align: left;
+      width: 100%;
+      table-layout: fixed;
+      font-family: Calibri;
+      font-size: 8pt;
+    "
+    cellpadding="5"
+    rules="cols"
+    border="1"
+  >
+    <tbody>
+      <tr>
+        <th>Supplier Company Name :</th>
+        <th><span style="font-weight: normal">%CustomerName%</span></th>
+        <th>PO-No :</th>
+        <th>%PO_Number%</th>
+      </tr>
+      <tr>
+        <th>Supplier Address :</th>
+        <td>%CustomerBAddress%</td>
+        <th>Date :</th>
+        <td>%PO_Date%</td>
+      </tr>
+      <tr>
+        <th>Supplier Email :</th>
+        <td>%ContactEMailIds%</td>
+        <th>Payment Terms :</th>
+        <td>%PaymentTerms%</td>
+      </tr>
+      <tr>
+        <th>Supplier Mobile Number :</th>
+        <td>%CustomerBPhone%</td>
+        <th>Lead Time :</th>
+        <td>${purchaseorder.cf_delivery_time_1}</td>
+      </tr>
+      <tr>
+        <th>Landline Phone :</th>
+        <td>%CustomerBPhone%</td>
+        <th>Purchaser Contact :</th>
+        <td>${purchaseorder.cf_purchaser_contact}</td>
+      </tr>
+      <tr>
+        <th>Purchaser Name :</th>
+        <td>%CompanyName%</td>
+        <th>Purchaser Mobile :</th>
+        <td>${purchaseorder.cf_purchaser_mobile}</td>
+      </tr>
+      <tr>
+        <th>Delivery Address :</th>
+        <td>%CompanyStreetAddress1% %CompanyStreetAddress2% %CompanyCity%</td>
+        <th>Office No:</th>
+        <td>${purchaseorder.cf_office_no}</td>
+      </tr>
+      <tr>
+        <th></th>
+        <td></td>
+        <th>Email ID :</th>
+        <td>${purchaseorder.cf_email_id_of_sales_person}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p style="font-family: Calibri; font-size: 8pt">
+  Dear %CustomerBAttention%, <br />
+  As per your proposal for the subjected product against
+  quotation-<b>%PO_Reference%</b>, I request you to kindly proceed with the
+  delivery as mentioned below:
+</p>
+<div style="margin-top: 20px; width: 100%"><span></span></div>
+<table
+  style="
+    width: 100%;
+    margin-top: 20px;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: none;
+    font-family: Calibri;
+  "
+  class="pcs-itemtable"
+  border="1"
+  cellpadding="0"
+  cellspacing="0"
+>
+  <thead>
+    <tr style="height: 32px">
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(89, 180, 216);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 3%;
+          height: 35px;
+          font-family: Calibri;
+        "
+        align="left"
+      >
+        <b>S.No</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(89, 180, 216);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 20%;
+          font-family: Calibri;
+        "
+        align="left"
+      >
+        <b>Description</b>
+      </td>
+      <td
+        align="right"
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(89, 180, 216);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 8%;
+          font-family: Calibri;
+        "
+      >
+        <b>Part Number</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(89, 180, 216);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 4%;
+          font-family: Calibri;
+        "
+        align="right"
+      >
+        <b>Qty</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(89, 180, 216);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 5%;
+          font-family: Calibri;
+        "
+        align="right"
+      >
+        <b> Unit Price</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(89, 180, 216);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 6%;
+          font-family: Calibri;
+        "
+        align="right"
+      >
+        <b>Total Price</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody id="lineitem">
+    <tr>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: left;
+          word-wrap: break-word;
+          font-family: Calibri;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty">%SiNo%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: left;
+          word-wrap: break-word;
+          font-family: Calibri;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty">%ItemName%-%ItemDescription%</span> <br />
+      </td>
+      <td
+        valign="top"
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          font-family: Calibri;
+        "
+      >
+        <span id="tmp_item_qty">%ItemSKU%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          font-family: Calibri;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty">%ItemQty%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          font-family: Calibri;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_rate">%ItemRate%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          text-align: right;
+          padding: 10px 10px 10px 5px;
+          word-wrap: break-word;
+          font-family: Calibri;
+        "
+        valign="top"
+      >
+        %ItemAmount% <br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="width: 100%; margin-top: 1px">
+  <div
+    style="
+      font-family: Calibri;
+      width: 45%;
+      padding: 3px 10px 3px 3px;
+      font-size: 9pt;
+      float: left;
+    "
+  >
+    <div style="white-space: pre-wrap"></div>
+  </div>
+  <div style="width: 50%; float: right">
+    <table
+      style="
+        font-size: 9pt;
+        color: #000000;
+        background-color: #ffffff;
+        border-spacing: 0;
+        border-collapse: collapse;
+        font-family: Calibri;
+      "
+      border="0"
+      cellspacing="0"
+      width="100%"
+    >
+      <tbody>
+        <tr
+          style="
+            height: 30px;
+            background-color: rgb(89, 180, 216);
+            font-size: 9pt;
+            color: black;
+            width: 100%;
+            font-family: Calibri;
+          "
+        >
+          <td style="padding: 5px 10px 5px 0" align="right" valign="middle">
+            <b>PO Value (Excluding VAT if applicable)</b>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="width: 120px; padding: 10px 10px 10px 5px"
+            align="right"
+            valign="middle"
+          >
+            <b>%PO_SubTotal% </b> <br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="clear: both"></div>
+</div>
+<br />
+<div style="font-family: Calibri">
+  <h6 style="padding: 0; margin: 0">PO Note:</h6>
+  <p style="padding: 0; margin: 0; font-size: 8pt">%PO_Notes%</p>
+</div>
+<h5 style="margin: 4; padding: 0; font-family: Calibri; font-size: 8pt">
+  STANDARD TERMS &amp; CONDITIONS:
+  <hr
+    width="155px"
+    color="black"
+    style="margin: 0; padding: 0; margin-left: 0%"
+  />
+</h5>
+<h5
+  style="
+    font-size: 7pt;
+    height: 11px;
+    margin: 2;
+    padding: 0;
+    background-color: rgb(89, 180, 216);
+    color: black;
+    font-family: Calibri;
+  "
+>
+  ACCEPTANCE &amp; VALIDITY
+</h5>
+<p
+  align="justify"
+  style="margin: 0; padding: 0; font-size: 8pt; font-family: Calibri"
+>
+  • By accepting this purchase order, the supplier acknowledges and agrees to be
+  bound by the terms and conditions outlined herein. <br />
+  • This purchase order is valid only with the unique purchase order number
+  provided. Any deviations or alterations require written approval from
+  &nbsp;&nbsp;&nbsp;INEX.
+</p>
+<h6
+  style="
+    font-size: 7pt;
+    height: 11px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(89, 180, 216);
+    color: black;
+    font-family: Calibri;
+  "
+>
+  QUALITY AND DELIVERY ASSURANCE
+</h6>
+<p
+  align="justify"
+  style="margin: 0; padding: 0; font-size: 8pt; font-family: Calibri"
+>
+  • Delivery dates and locations are specified in the purchase order. The
+  supplier must adhere to these commitments. <br />
+  • Time is of the essence. Delays may result in penalties, cancellations, or
+  additional costs. <br />
+  • INEX reserves the right to inspect and verify the quality and quantity of
+  products or services upon receipt. Non-compliance may lead to rejection
+  &nbsp;&nbsp;&nbsp;and return at the supplier's expense. <br />
+  • The supplier is responsible for delivering products or services that meet
+  agreed-upon quality standards.The supplier should address and rectify any
+  &nbsp;&nbsp;&nbsp;defects or issues promptly.
+</p>
+<h6
+  style="
+    font-size: 7pt;
+    height: 11px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(89, 180, 216);
+    color: black;
+    font-family: Calibri;
+  "
+>
+  PRICING AND PAYMENT
+</h6>
+<p
+  align="justify"
+  style="margin: 0; padding: 0; font-size: 8pt; font-family: Calibri"
+>
+  • Prices are in currency mentioned in notes and are exclusive of all taxes and
+  duties unless otherwise stated. <br />
+  • Payment terms are as specified in the purchase order. INEX reserves the
+  right to adjust payment terms as needed. <br />
+  • Invoices should be submitted in accordance with the purchase order and
+  include all relevant details, such as the purchase order number, product
+  &nbsp;&nbsp;&nbsp;descriptions, quantities, and prices. <br />
+  • Payment will be processed as per agreed payment terms following the
+  supplier's submission of a correct and complete invoice.
+</p>
+<h6
+  style="
+    font-size: 7pt;
+    height: 11px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(89, 180, 216);
+    color: black;
+    font-family: Calibri;
+  "
+>
+  AMENDMENTS &amp; TERMINATION
+</h6>
+<p
+  align="justify"
+  style="margin: 0; padding: 0; font-size: 8pt; font-family: Calibri"
+>
+  • Any changes to the purchase order require written agreement from both INEX
+  and the supplier. This includes changes in quantities, specifications,
+  &nbsp;&nbsp;&nbsp;or delivery schedules. <br />
+  • INEX reserves the right to terminate the purchase order for convenience,
+  with notice, and compensation asagreed upon. Termination due to
+  &nbsp;&nbsp;&nbsp;supplier default may result in damages payable by the
+  supplier.
+</p>
+<h6
+  style="
+    font-size: 7pt;
+    height: 11px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(89, 180, 216);
+    color: black;
+    font-family: Calibri;
+  "
+>
+  CONFIDENTIALITY AND GOVERNING LAW
+</h6>
+<p
+  align="justify"
+  style="margin: 0; padding: 0; font-size: 8pt; font-family: Calibri"
+>
+  • Both parties agree to maintain the confidentiality of any sensitive
+  information exchanged during the course of the project. <br />
+  • This agreement is governed by and construed in accordance with the laws of
+  the Kingdom of Saudi Arabia. Any disputes arising from this
+  &nbsp;&nbsp;&nbsp;agreement shall be subject to the exclusive jurisdiction of
+  Saudi Arabian courts.
+</p>
+<table
+  style="
+    padding: 0;
+    margin: 5;
+    border-collapse: collapse;
+    width: 100%;
+    border-color: black;
+    font-size: 8pt;
+    font-family: Calibri;
+  "
+  border="1"
+>
+  <tbody>
+    <tr
+      style="
+        background-color: rgb(89, 180, 216);
+        color: black;
+        text-align: left;
+        font-family: Calibri;
+      "
+    >
+      <th>%CompanyName%</th>
+      <th>Send Invoice &amp; Bank details To</th>
+    </tr>
+    <tr
+      style="
+        background-color: rgb(89, 180, 216);
+        color: black;
+        text-align: left;
+        font-family: Calibri;
+      "
+    >
+      <th style="width: 50%">Mr. ${purchaseorder.cf_sales_person}</th>
+      <th><span style="font-size: 13.3333px">Bill TO.</span></th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top">
+        <p>${purchaseorder.cf_bill_note}</p>
+        
+      </td>
+      <td>
+        %CompanyName%. <br />
+        %CompanyAddressSecondary% <br>
+        %CompanyStreetAddress1% <br />
+        %CompanyStreetAddress2% <br />
+        %CompanyDistrict% <br>
+        %CompanyPostalCode% <br>
+        %CompanyCity%
+      </td>
+    </tr>
+    <tr>
+      <th style="font-family: Calibri; text-align: left">Date:%PO_Date%</th>
+      <th style="text-align: left"><br /></th>
+    </tr>
+  </tbody>
+</table>
+<h5 style="margin: 4; padding: 0">
+  Notice:
+  <hr
+    width="40px"
+    color="black"
+    style="margin: 0; padding: 0; margin-left: 0px"
+  />
+</h5>
+<p
+  align="justify"
+  style="margin: 0; padding: 0; font-family: Calibri; font-size: 6pt"
+>
+  'INEX': Refers to Jumana Abdullah Mohammed Logistics Services Est. (مؤسسة
+  جمانه عبدالله محمد للخدمات اللوجستية) OR INEX AL KHALEEJ Contracting Est.
+  (مؤسسة اي نكس الخليج للمقاولات) Sole Establishments registered and operating
+  under the laws of the relevant jurisdiction, with its principal place of
+  business at Kingdom Of Saudi Arabia For all purposes within this document,
+  'INEX' is used as an abbreviation and reference to Jumana Abdullah Mohammed
+  Logistics Services Est. (مؤسسة جمانه عبدالله محمد للخدمات اللوجستية) OR INEX
+  AL KHALEEJ Contracting Est. (مؤسسة اي نكس الخليج للمقاولات) The use of 'INEX'
+  in this document is intended solely for convenience and brevity and does not
+  alter or affect the legal identity, rights, or obligations of to Jumana
+  Abdullah Mohammed Logistics Services Est. (مؤسسة جمانه عبدالله محمد للخدمات
+  اللوجستية) OR INEX AL KHALEEJ Contracting Est. (مؤسسة اي نكس الخليج للمقاولات)
+  in any manner. <br /><br />
+  <b
+    ><i
+      >For inquiries or concerns regarding the quotation or these terms and
+      conditions, please contact us.</i
+    ></b
+  >
+</p>
+<footer>
+  <p style="text-align: center"><br /></p>
+</footer>

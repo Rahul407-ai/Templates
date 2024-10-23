@@ -1,0 +1,502 @@
+<meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<style media="all" type="text/css">
+  #lineItem tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+</style>
+<div style="font-family: Open Sans; font-size: 10pt; color: hsl(0, 0%, 20%)">
+  <table
+    style="
+      width: 100%;
+      height: 100px;
+      font-size: 10pt;
+      border-collapse: collapse;
+      border-color: white;
+      border-left: none;
+      border-right: none;
+    "
+  >
+    <tbody>
+      <tr>
+       <th style="font-size: larger; float: left; margin-left: 0;">%ScaledLogo%</th>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr color="black">
+<h3 style="font-weight: 900; text-align: center;padding: 0; margin: 0;">TAX INVOICE فاتورة ضريبية</h3>
+<hr style="border: none; border-top: 2px dotted skyblue; width: 500px;">
+<div style="float: left;">
+  <table  style="font-size: 8pt; margin: 2; padding: 2; text-align: left;">
+    <tr>
+      <th>   Building: %CompanyAddressSecondary% <br>
+         District Name: %CompanyDistrict% <br>
+         City Name: %CompanyCity% <br>
+         Zip Code: %CompanyPostalCode% <br>
+         Additional Number: %CompanyAdditionalNumber% <br>
+         Unit Number:${invoice.cf_unit_no} </th>
+    
+  </table>
+</div>
+
+<div style="float: right;">
+  <table  style="width: 80%;  font-size: 8pt; height: 155px; float: right;">
+  </tr>
+  <tr>
+    <th>Document Number رقم السند </th>
+    <th>Document Date تاريخ السند </th>
+    <th>Page رقم الصفحة </th>
+ </tr>
+ <tr>
+  <th style="border: 1px dotted skyblue; border-left: none; border-right: none; border-top: none;">${invoice.cf_document_number}</th>
+  <th style="border: 1px dotted skyblue; border-left: none; border-right: none; border-top: none; ">${invoice.cf_document_date}</th>
+  <th style="border: 1px dotted skyblue; border-left: none; border-right: none; border-top: none; ">${invoice.cf_page_no}</th>
+ </tr>
+  <tr >
+    <th>Customer No. رقم العميل</th>
+    <th>Vat Number-Customer الرقم الضريبي للعميل</th>
+    <th>Payment Terms شروط الدفع</th>
+  </tr>
+  <tr>
+    <th style="border: 1px dotted skyblue; border-left: none; border-right: none; border-top: none; ">${invoice.cf_customer_no}</th>
+    <th style="border: 1px dotted skyblue; border-left: none; border-right: none; border-top: none; ">${invoice.cf_vat_no}</th>
+    <th style="border: 1px dotted skyblue; border-left: none; border-right: none; border-top: none; ">%PaymentTerms%</th>
+  </tr>
+  <tr>
+    <th>Your Reference رقم المرجع</th>
+    <th>PO Ref مرجع أمر الشراء</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th style="border: 1px dotted skyblue; border-left: none; border-right: none; border-top: none; ">${invoice.cf_your_reference}</th>
+    <th style="border: 1px dotted skyblue; border-left: none; border-right: none; border-top: none; ">${invoice.cf_po_ref}</th>
+    <th style="border: 1px dotted skyblue; border-left: none; border-right: none; border-top: none; "></th>
+  </tr>
+  <tr >
+    <th>Sales Person اسم البائع</th>
+    <th>Delivery No. رقم سند التسليم </th>
+    <th></th>
+  </tr>
+  <tr>
+    <th style="border: 1px dotted skyblue; border-left: none; border-right: none; border-top: none; ">%SalesPerson%</th>
+    <th style="border: 1px dotted skyblue; border-left: none; border-right: none; border-top: none; ">${invoice.cf_delivery_no}</th>
+    <th style="border: 1px dotted skyblue; border-left: none; border-right: none; border-top: none; "></th>
+  </tr>
+  </table>
+</div>
+<br><br><br><br><br>
+<hr style="border-top: 2px dotted skyblue; width: 200px; margin-left: 0; margin: 0; padding: 0;">
+<div>
+  <table style=" font-size: 8pt; text-align: left; margin: 0; padding: 0;">
+    <tr>
+      <th> %CustomerName%   <br>
+        %CustomerBAddress% <br>
+        %CustomerBAddressSecondary%<br>
+        %CustomerBCity%  <br>
+        %CustomerBDistrict% <br>
+        %CustomerBState%<br>
+        %CustomerBCountry%</th>
+    
+  </table>
+</div> <br>  
+<hr style="border-top: 2px dotted skyblue;">
+<div style="text-align: right; font-size: 8pt; padding: 0; margin: 0;"><b>Currency:</b><b>${invoice.cf_currency}</b></div>
+
+<div style=" width: 100%"><span></span></div>
+<table
+  style="
+    width: 100%;
+    margin-top: 20px;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+  "
+  class="pcs-itemtable"
+  border="0"
+  cellpadding="0"
+  cellspacing="0"
+>
+  <thead>
+    <tr style="height: 32px">
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(237, 247, 252);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 7%;
+          border-bottom: 1px solid skyblue;
+          
+        "
+        align="left"
+      >
+        <b>S.No</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(237, 247, 252);
+          padding: 5px 10px 5px 10px;
+          word-wrap: break-word;
+          border-bottom: 1px solid skyblue;
+        "
+      >
+        <b>Description البيان</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(237, 247, 252);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 18%;
+          border-bottom: 1px solid skyblue;
+        "
+        align="right"
+      >
+        <b>Quantity  الكمية</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(237, 247, 252);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 10%;
+          border-bottom: 1px solid skyblue;
+        "
+        align="right"
+      >
+        <b>UoM الوحدة</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(237, 247, 252);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 11%;
+          border-bottom: 1px solid skyblue;
+        "
+        align="right"
+      >
+        <b>Price السعر</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(237, 247, 252);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 11%;
+          border-bottom: 1px solid skyblue;
+        "
+        align="right"
+      >
+        <b>Tax % نسبة الضريبة</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(237, 247, 252);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 11%;
+          border-bottom: 1px solid skyblue;
+        "
+        align="right"
+      >
+        <b>Total المجموع</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody id="lineitem">
+    <tr>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: left;
+          word-wrap: break-word;
+          border-bottom: 2px solid skyblue;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty">%SiNo%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 0px 10px 10px;
+          border-bottom: 2px solid skyblue;
+        "
+        valign="top"
+      >
+        <span style="word-wrap: break-word" id="tmp_item_name">%ItemName% / %SecItemName%</span>
+        <br />
+        <span
+          style="
+            color: black;
+            font-size: 9pt;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            
+          "
+          id="tmp_item_description"
+          >%ItemDescription%</span
+        >
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          border-bottom: 2px solid skyblue;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty">%ItemQty%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          border-bottom: 2px solid skyblue;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty">%ItemSKU%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          border-bottom: 2px solid skyblue;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_rate">%ItemRate%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          text-align: right;
+          padding: 10px 10px 10px 5px;
+          word-wrap: break-word;
+          border-bottom: 2px solid skyblue;
+        "
+        valign="top"
+      >
+      %ItemTaxPercent% <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          text-align: right;
+          padding: 10px 10px 10px 5px;
+          word-wrap: break-word;
+          border-bottom: 2px solid skyblue;
+        "
+        valign="top"
+      >
+        %ItemAmount% <br />
+      </td>
+    </tr>
+  </tbody>
+  <tbody id="headerItem">
+    <tr>
+      <td
+        valign="top"
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #eee;
+          color: #000000;
+          padding: 10px 0px 10px 10px;
+        "
+        colspan="5"
+      >
+        <b> %ItemHeaderName%</b>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="float: left; margin-top: 70px; font-size: 8pt;"><b>Terms And Condition:</b> <br><p>%TermsAndCondition%</p></div>
+  
+<div style="width: 50%; float: right">
+    <table
+      style="
+        font-size: 9pt;
+        color: #000000;
+        background-color: #ffffff;
+        border-spacing: 0;
+        border-collapse: collapse;
+        
+      "
+      border="0"
+      cellspacing="0"
+      width="100%"
+    >
+      <tbody>
+        <tr
+          style="
+            height: 40px;
+            border-bottom: 1px dotted skyblue;
+            font-size: 9pt;
+            color: black;
+            margin: 0;
+            padding: 0;
+          "
+        >
+          <td  style="padding: 5px 10px 5px 0" align="left" valign="middle">
+            Invoice Subtotal المجموع:
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="width: 120px; padding: 10px 10px 10px 5px"
+            align="right"
+            valign="middle"
+          >
+            <b>%InvoiceSubTotal%</b> <br />
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr
+          style="
+            height: 40px;
+            border-bottom: 1px dotted skyblue;
+            font-size: 9pt;
+            color: black;
+            margin: 0;
+            padding: 0;
+          "
+        >
+          <td style="padding: 5px 10px 5px 0" align="left" valign="middle">
+            Total Before Tax المجموع:قبللضريبة
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="width: 120px; padding: 10px 10px 10px 5px"
+            align="right"
+            valign="middle"
+          >
+            <b>%EstimateSubTotal%</b> <br />
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr
+          style="
+            height: 40px;
+            border-bottom: 1px dotted skyblue;
+            font-size: 9pt;
+            color: black;
+            margin: 0;
+            padding: 0;
+          "
+        >
+          <td style="padding: 5px 10px 5px 0" align="left" valign="middle">
+            Total Tax Amount  الضريبة قيمة:
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="width: 120px; padding: 10px 10px 10px 5px"
+            align="right"
+            valign="middle"
+          >
+            <b>%TaxTotal%</b> <br />
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr
+          style="
+            height: 40px;
+            border-bottom: 2px solid skyblue;
+            font-size: 9pt;
+            color: black;
+            margin: 0;
+            padding: 0;
+          "
+        >
+          <td style="padding: 5px 10px 5px 0" align="left" valign="middle">
+            <b><b style="color: yellow;">▌</b>Total Amount المجموع الجمالي</b>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="width: 120px; padding: 10px 10px 10px 5px"
+            align="right"
+            valign="middle"
+            
+          >
+            <b>%ItemAmount%</b> <br />
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div> 
+  <br><br><br><br><br><br><br>
+<div style="text-align: bottom;">%EInvoiceQRImg%</div>
+  <hr style="border-top: 2px dotted skyblue; margin-top: 200px;">
+  
+  
+</div>
+</div>
+ 

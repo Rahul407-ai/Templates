@@ -1,0 +1,730 @@
+<meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  content="text/html; charset=utf-8"
+  http-equiv="content-type"
+/><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  content="text/html; charset=utf-8"
+  http-equiv="content-type"
+/><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta
+  content="text/html; charset=utf-8"
+  http-equiv="content-type"
+/><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta
+  content="text/html; charset=utf-8"
+  http-equiv="content-type"
+/><meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<style media="all" type="text/css">
+  #lineItem tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+</style>
+<font face="Roboto"></font>
+<div style="float: left"><font face="Roboto">%ScaledLogoImage%</font></div>
+<div style="float: right; padding-top: 20px; font-size: 22pt">
+  <font face="Roboto"><b>TAX INVOICE</b> </font>
+</div>
+<font face="Roboto"
+  ><br /><br />
+  <br /><br />
+</font>
+<div>
+  <table
+    border="0"
+    style="
+      width: 100%;
+      table-layout: fixed;
+      font-size: 8pt;
+      text-align: justify;
+    "
+  >
+    <tbody>
+      <tr>
+        <th style="width: 70px; text-align: left">
+          <font face="Roboto">Bill From </font>
+        </th>
+        <th style="width: 1%; text-align: left"></th>
+        <td style="width: 290px; text-align: left"></td>
+        <th style="width: 100px; text-align: left">
+          <font face="Roboto">Bill To. </font>
+        </th>
+        <th style="width: 1%; text-align: left"></th>
+        <td style="width: 210px; text-align: left"></td>
+      </tr>
+      <tr>
+        <td style="text-align: left"><font face="Roboto">Name</font></td>
+        <td style="text-align: left"><font face="Roboto">:</font></td>
+        <td
+          style="padding-left: 10px; align-items: flex-start; text-align: left"
+        >
+          <font face="Roboto">%CompanyName% </font>
+        </td>
+        <td style="text-align: left">
+          <font face="Roboto">Customer Name </font>
+        </td>
+        <td style="text-align: left"><font face="Roboto">:</font></td>
+        <td style="padding-left: 10px; text-align: left">
+          <font face="Roboto">%CustomerName% </font>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: left"><font face="Roboto">Telephone</font></td>
+        <td style="text-align: left"><font face="Roboto">:</font></td>
+        <td style="padding-left: 10px; text-align: left">
+          <font face="Roboto">%CompanyPhone% </font>
+        </td>
+        <td style="text-align: left"><font face="Roboto">Telephone</font></td>
+        <td style="text-align: left"><font face="Roboto">:</font></td>
+        <td style="padding-left: 10px; text-align: left">
+          <font face="Roboto">%CustomerBPhone% </font>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: left"><font face="Roboto">TRN No</font></td>
+        <td style="text-align: left"><font face="Roboto">:</font></td>
+        <td style="padding-left: 10px; text-align: left">
+          <font face="Roboto">%CompanyTRN% </font>
+        </td>
+        <td style="text-align: left">
+          <font face="Roboto">Customer TRN No </font>
+        </td>
+        <td style="text-align: left"><font face="Roboto">:</font></td>
+        <td style="padding-left: 10px; text-align: left">
+          <font face="Roboto">%ContactTRN% </font>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: left"><font face="Roboto">Address</font></td>
+        <td style="text-align: left"><font face="Roboto">:</font></td>
+        <td style="padding-left: 10px; text-align: left">
+          <font face="Roboto">
+            %CompanyStreetAddress1% %CompanyCity% %CompanyCountry%
+          </font>
+        </td>
+        <td style="text-align: left"><font face="Roboto">Address</font></td>
+        <td style="text-align: left"><font face="Roboto">:</font></td>
+        <td style="padding-left: 10px; text-align: left">
+          <font face="Roboto"> %CustomerBAddress% - %CustomerBCountry% </font>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: left"><font face="Roboto">Department</font></td>
+        <td style="text-align: left"><font face="Roboto">:</font></td>
+        <td style="padding-left: 10px; text-align: left">
+          <font face="Roboto"> ${invoice.cf_departments_s} </font>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div>
+  <table
+    style="
+      width: 100%;
+      margin-top: 20px;
+      table-layout: fixed;
+      border-spacing: 0px;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 8pt;
+    "
+    class="pcs-itemtable"
+    border="0"
+    cellpadding="0"
+    cellspacing="0"
+  >
+    <thead>
+      <tr style="height: 32px">
+        <td
+          style="
+            background-color: rgb(99, 99, 98);
+            padding: 5px 10px 5px 5px;
+            overflow-wrap: break-word;
+            width: 20%;
+          "
+          align="left"
+        >
+          <font face="Roboto"
+            ><font color="#ffffff"
+              ><b>Invoice</b><b style="font-size: 8pt">&nbsp;</b></font
+            ><b style="color: white; font-size: 8pt">No</b>
+          </font>
+        </td>
+        <td
+          style="
+            background-color: rgb(99, 99, 98);
+            padding: 5px 10px;
+            overflow-wrap: break-word;
+            width: 20%;
+          "
+        >
+          <font face="Roboto"
+            ><font color="#ffffff"><b>Invoice</b></font
+            ><b style="color: rgb(255, 255, 255)">&nbsp;</b
+            ><b style="color: white; font-size: 8pt">Date</b>
+          </font>
+        </td>
+        <td
+          style="
+            font-size: 8pt;
+            color: white;
+            background-color: #636362;
+            padding: 5px 10px 5px 5px;
+            word-wrap: break-word;
+            width: 20%;
+          "
+        >
+          <font face="Roboto"><b>Terms</b> </font>
+        </td>
+        <td
+          style="
+            font-size: 8pt;
+            color: white;
+            background-color: #636362;
+            padding: 5px 10px 5px 5px;
+            word-wrap: break-word;
+            width: 20%;
+          "
+        >
+          <font face="Roboto"><b>Due Date</b> </font>
+        </td>
+        <td
+          style="
+            font-size: 8pt;
+            color: white;
+            background-color: #636362;
+            padding: 5px 10px 5px 5px;
+            word-wrap: break-word;
+            width: 20%;
+          "
+        >
+          <font face="Roboto"><b>P.R.No</b> </font>
+        </td>
+      </tr>
+      <tr></tr>
+      <tr style="height: 32px">
+        <td
+          style="
+            font-size: 8pt;
+            color: black;
+            padding: 5px 10px 5px 5px;
+            word-wrap: break-word;
+            width: 20%;
+          "
+          align="left"
+        >
+          %InvoiceNumber%
+        </td>
+        <td
+          style="
+            font-size: 8pt;
+            color: black;
+            padding: 5px 10px 5px 10px;
+            word-wrap: break-word;
+            width: 20%;
+          "
+        >
+          %InvoiceDate%
+        </td>
+        <td
+          style="
+            font-size: 8pt;
+            color: black;
+            padding: 5px 10px 5px 5px;
+            word-wrap: break-word;
+            width: 20%;
+          "
+        >
+          <font face="Roboto"> %PaymentTerms% </font>
+        </td>
+        <td
+          style="
+            font-size: 8pt;
+            padding: 5px 10px 5px 5px;
+            overflow-wrap: break-word;
+            width: 20%;
+          "
+        >
+          %DueDate%
+        </td>
+        <td
+          style="
+            font-size: 8pt;
+            padding: 5px 10px 5px 5px;
+            overflow-wrap: break-word;
+            width: 20%;
+          "
+        >
+          %ReferenceInvoiceNumber%
+        </td>
+      </tr>
+    </thead>
+  </table>
+</div>
+<div>
+  <font face="Roboto"><span></span> </font>
+</div>
+<table
+  style="
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0px;
+    border-collapse: collapse;
+  "
+  class="pcs-itemtable"
+  border="0"
+  cellpadding="0"
+  cellspacing="0"
+>
+  <thead>
+    <tr style="height: 32px">
+      <td
+        style="
+          font-size: 8pt;
+          color: white;
+          background-color: #636362;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 3%;
+        "
+        align="left"
+      >
+        <font face="Roboto"><b>#</b> </font>
+      </td>
+      <td
+        style="
+          font-size: 8pt;
+          color: white;
+          background-color: #636362;
+          padding: 5px 10px 5px 10px;
+          word-wrap: break-word;
+          width: 30%;
+        "
+      >
+        <font face="Roboto"><b>Item &amp; Description</b> </font>
+      </td>
+      <td
+        style="
+          font-size: 8pt;
+          color: white;
+          background-color: #636362;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 10%;
+          text-align: center;
+        "
+        align="right"
+      >
+        <font face="Roboto"><b>Qty</b> </font>
+      </td>
+      <td
+        style="
+          font-size: 8pt;
+          color: white;
+          background-color: #636362;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 9%;
+        "
+        align="right"
+      >
+        <font face="Roboto"><b>Unit Price</b> </font>
+      </td>
+      <td
+        style="
+          font-size: 8pt;
+          color: white;
+          background-color: #636362;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 10%;
+          text-align: center;
+        "
+        align="right"
+      >
+        <font face="Roboto"><b> Taxable Amount</b> </font>
+      </td>
+      <td
+        align="right"
+        style="
+          font-size: 8pt;
+          color: white;
+          background-color: #636362;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 8%;
+          text-align: center;
+        "
+      >
+        <font face="Roboto"><b>Tax 5%</b> </font>
+      </td>
+      <td
+        align="right"
+        style="
+          font-size: 8pt;
+          color: white;
+          background-color: #636362;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 9%;
+          text-align: center;
+        "
+      >
+        <font face="Roboto"><b>Tax Amount</b> </font>
+      </td>
+      <td
+        style="
+          font-size: 8pt;
+          color: white;
+          background-color: #636362;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 10%;
+          text-align: center;
+        "
+        align="right"
+      >
+        <font face="Roboto"><b>Total</b> </font>
+      </td>
+    </tr>
+  </thead>
+  <tbody id="lineitem">
+    <tr>
+      <td
+        style="
+          font-size: 8pt;
+          border-bottom: 1px solid #e3e3e3;
+          border-right: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: left;
+          word-wrap: break-word;
+          padding-bottom: 20px;
+        "
+        valign="top"
+      >
+        <font face="Roboto"><span id="tmp_item_qty">%SiNo%</span> <br /> </font>
+      </td>
+      <td
+        style="
+          font-size: 8pt;
+          border-bottom: 1px solid #e3e3e3;
+          border-right: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 0px 10px 10px;
+        "
+        valign="top"
+      >
+        <font face="Roboto"
+          ><span style="word-wrap: break-word" id="tmp_item_name"
+            ><b>%ItemName%</b></span
+          >
+          <br />
+          <span
+            style="
+              color: black;
+              font-size: 8pt;
+              white-space: pre-wrap;
+              word-wrap: break-word;
+            "
+            id="tmp_item_description"
+            >%ItemDescription%</span
+          >
+        </font>
+      </td>
+      <td
+        valign="top"
+        style="
+          font-size: 8pt;
+          border-bottom: 1px solid #e3e3e3;
+          border-right: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+        "
+      >
+        <div style="text-align: center">
+          <span style="font-family: Roboto; font-size: 8pt">%ItemQty%</span>
+        </div>
+        <font face="Roboto"
+          ><div style="text-align: center">
+            <span style="color: gray; font-size: 8pt">%UsageUnit%</span>
+          </div>
+        </font>
+      </td>
+      <td
+        style="
+          text-align: center;
+          font-size: 8pt;
+          border-bottom: 1px solid rgb(227, 227, 227);
+          border-right: 1px solid rgb(227, 227, 227);
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
+          padding: 10px 12px 5px 10px;
+          overflow-wrap: break-word;
+        "
+        valign="top"
+      >
+        <font face="Roboto"
+          ><span id="tmp_item_qty">%ItemRate%</span> <br />
+        </font>
+      </td>
+      <td
+        style="
+          text-align: center;
+          font-size: 8pt;
+          border-bottom: 1px solid rgb(227, 227, 227);
+          border-right: 1px solid rgb(227, 227, 227);
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
+          padding: 10px 15px 5px 10px;
+          overflow-wrap: break-word;
+        "
+        valign="top"
+      >
+        <font face="Roboto"
+          ><span id="tmp_item_rate">%TaxableAmount%</span> <br />
+        </font>
+      </td>
+      <td
+        valign="top"
+        style="
+          text-align: center;
+          font-size: 8pt;
+          border-bottom: 1px solid rgb(227, 227, 227);
+          border-right: 1px solid rgb(227, 227, 227);
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
+          padding: 10px 15px 5px 10px;
+          overflow-wrap: break-word;
+        "
+      >
+        <font face="Roboto"
+          ><span id="tmp_item_rate">%ItemTaxPercent%</span> <br />
+        </font>
+      </td>
+      <td
+        valign="top"
+        style="
+          text-align: center;
+          font-size: 8pt;
+          border-bottom: 1px solid rgb(227, 227, 227);
+          border-right: 1px solid rgb(227, 227, 227);
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
+          padding: 10px 15px 5px 10px;
+          overflow-wrap: break-word;
+        "
+      >
+        <font face="Roboto"
+          ><span id="tmp_item_rate">%ItemTaxAmount%</span> <br />
+        </font>
+      </td>
+      <td
+        style="
+          text-align: center;
+          font-size: 8pt;
+          border-bottom: 1px solid rgb(227, 227, 227);
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
+          padding: 10px 14px 10px 5px;
+          overflow-wrap: break-word;
+        "
+        valign="top"
+      >
+        <font face="Roboto"> %ItemAmount% <br /> </font>
+      </td>
+    </tr>
+  </tbody>
+  <tbody id="headerItem">
+    <tr>
+      <td
+        valign="top"
+        style="
+          font-size: 8pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #eee;
+          color: #000000;
+          padding: 10px 0px 10px 10px;
+        "
+        colspan="5"
+      >
+        <font face="Roboto"><b> %ItemHeaderName%</b> </font>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="width: 100%; margin-top: 1px">
+  <div
+    style="width: 45%; padding: 3px 10px 3px 3px; font-size: 9pt; float: left"
+  >
+    <div style="white-space: pre-wrap"></div>
+  </div>
+  <div style="width: 50%; float: right">
+    <table
+      width="100%"
+      cellspacing="0"
+      border="0"
+      style="
+        font-size: 8pt;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border-spacing: 0px;
+        border-collapse: collapse;
+      "
+    >
+      <tbody>
+        <tr style="height: 20px; font-size: 8pt; color: black">
+          <td style="padding: 5px 10px 5px 0" align="right" valign="middle">
+            <font face="Roboto"> Total Taxable Amount </font>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="width: 120px; padding: 10px 10px 10px 5px"
+            align="right"
+            valign="middle"
+          >
+            %InvoiceSubTotalInBCY%
+          </td>
+        </tr>
+        <tr style="height: 20px; font-size: 8pt; color: black">
+          <td style="padding: 5px 29px 5px 0" align="right" valign="middle">
+            <font face="Roboto"> Total Tax Amount </font>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="width: 120px; padding: 10px 10px 10px 5px"
+            align="right"
+            valign="middle"
+          >
+            <font face="Roboto"> %BCYTaxTotal% </font>
+          </td>
+        </tr>
+        <tr style="height: 50px; font-size: 8pt; color: black">
+          <td style="padding: 5px 48px 17px 0" align="right" valign="middle">
+            <font face="Roboto"> Total Amount </font>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="width: 120px; padding: 10px 10px 17px 5px"
+            align="right"
+            valign="middle"
+          >
+            %InvoiceTotal%
+          </td>
+        </tr>
+        <tr
+          style="
+            height: 20px;
+            background-color: #eee;
+            font-size: 8pt;
+            color: black;
+            border-bottom: 1px solid white;
+          "
+        >
+          <td style="padding: 5px 10px 5px 0" align="right" valign="middle">
+            <font face="Roboto"><b>Balance Due</b> </font>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="width: 120px; padding: 10px 10px 10px 5px"
+            align="right"
+            valign="middle"
+          >
+            %InvoiceTotalInBCY%
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <font face="Roboto"><br /><br /><br /><br /><br /><br /><br /> </font>
+  <p style="margin: 0px; padding-top: 100px; padding: 0px; font-size: 8pt">
+    <font face="Roboto"> %Notes% </font>
+  </p>
+  <div>
+    <div>
+      <p style="margin: 10; text-align: right; font-size: 8pt">
+        <font face="Roboto"> Total In Words: %TotalInWords% </font>
+      </p>
+    </div>
+    <div>
+      <p style="font-size: 8pt">
+        <font face="Roboto"><b>Terms &amp; Conditions.</b></font>
+      </p>
+      <p>
+        <font face="Roboto"
+          ><span style="font-size: 8pt">%TermsAndCondition%</span>
+        </font>
+      </p>
+      <p>
+        <font face="Roboto"><span style="font-size: 8pt"></span> </font>
+      </p>
+      <p>
+        <font face="Roboto"
+          ><span style="font-size: 8pt"><br /></span>
+        </font>
+      </p>
+    </div>
+    <font face="Roboto"> </font>
+    <div>
+      <table style="width: 100%; font-size: 8pt">
+        <tbody>
+          <tr>
+            <td style="width: 20%"><font face="Roboto">Receiver Name</font></td>
+            <td style="width: 25%"><hr style="border: 1px dotted gray" /></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td style="height: 100px">
+              <font face="Roboto">Stamp / Signature </font>
+            </td>
+            <td><hr style="border: 1px dotted gray" /></td>
+            <td style="text-align: right; padding-top: 15px">
+              <hr
+                style="width: 40%; margin-right: 0; border: 1px dotted gray"
+              />
+              <font face="Roboto"
+                ><span style="padding-right: 20px"
+                  >Authorized Signature&nbsp;&nbsp;</span
+                >
+              </font>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

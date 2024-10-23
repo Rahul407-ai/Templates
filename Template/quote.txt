@@ -1,0 +1,744 @@
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<style media="all" type="text/css">
+  #lineItem tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+</style>
+<div style="font-size: 10pt; color: #333333">
+  <table
+    style="
+      width: 100%;
+      height: 100px;
+      font-size: 10pt;
+      border-collapse: collapse;
+      border-color: white;
+      border-left: none;
+      border-right: none;
+    "
+  >
+    <tbody>
+      <tr>
+        <th style="font-family: Calibri; text-align: left">
+          %ScaledLogoImage%
+        </th>
+        <th
+          style="
+            font-family: Calibri;
+            text-align: center;
+            font-size: larger;
+            color: darkblue;
+          "
+        >
+          QUOTATION
+          <hr color="darkblue" width="100px" />
+        </th>
+        <th style="text-align: right">
+          <div style="font-family: Calibri; font-size: medium; color: darkblue">
+            <i>INEX INFRA GENERAL TRADING CO. L.L.C</i>
+          </div>
+          <div style="color: darkblue; font-size: small">
+            <i>(Inex Infratech Solutions)</i>
+          </div>
+          <div style="font-family: Calibri; color: darkblue; font-size: small">
+            License Number: 1198691
+          </div>
+          <div style="font-family: Calibri; color: darkblue; font-size: small">
+            VAT:104127944700003
+          </div>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr color="darkblue" />
+<div>
+  <table
+    style="
+      width: 100%;
+      border-color: rgb(238, 178, 178);
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 10pt;
+      border-bottom: none;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      font-family: Calibri;
+    "
+  >
+    <tbody>
+      <tr>
+        <th style="width: 120px; text-align: left">Quotation</th>
+        <th style="text-align: left; width: 1%">:</th>
+        <td style="width: 300px; text-align: left">
+          &nbsp;&nbsp; %EstimateNumber%
+        </td>
+        <th style="width: 120px; text-align: left">Date</th>
+        <th style="text-align: left; width: 1%">:</th>
+        <td style="width: 210px; text-align: left">
+          &nbsp;&nbsp; %EstimateDate%
+        </td>
+      </tr>
+      <tr>
+        <th style="text-align: left">Client Company</th>
+        <th style="text-align: left">:</th>
+        <td style="text-align: left">&nbsp;&nbsp; %ContactCompanyName%</td>
+        <th style="text-align: left">Quotation Validity</th>
+        <th style="text-align: left">:</th>
+        <td style="text-align: left">
+          &nbsp;&nbsp; ${estimate.cf_quotatiion_validity}
+        </td>
+      </tr>
+      <tr>
+        <th style="text-align: left">Project</th>
+        <th style="text-align: left">:</th>
+        <td style="text-align: left">
+          &nbsp;&nbsp; ${estimate.cf_project_name}
+        </td>
+        <th style="text-align: left">Contact Name</th>
+        <th style="text-align: left">:</th>
+        <td style="text-align: left">
+          &nbsp;&nbsp; ${estimate.cf_contact_name}
+        </td>
+      </tr>
+      <tr>
+        <th style="text-align: left">Delivery</th>
+        <th style="text-align: left">:</th>
+        <td style="text-align: left">&nbsp;&nbsp; ${estimate.cf_delivery}</td>
+        <th style="text-align: left">Contact Number</th>
+        <th style="text-align: left">:</th>
+        <td style="text-align: left">
+          &nbsp;&nbsp; ${estimate.cf_contact_number}
+        </td>
+      </tr>
+      <tr>
+        <th style="text-align: left">Version</th>
+        <th style="text-align: left">:</th>
+        <td style="text-align: left">&nbsp;&nbsp; ${estimate.cf_version}</td>
+        <th style="text-align: left">Project Location</th>
+        <th style="text-align: left">:</th>
+        <td style="text-align: left">
+          &nbsp;&nbsp; ${estimate.cf_project_location}
+        </td>
+      </tr>
+      <tr>
+        <th style="text-align: left">Sales Contact<br /></th>
+        <th style="text-align: left">:</th>
+        <td style="text-align: left">
+          &nbsp;&nbsp; ${estimate.cf_sales_contact}
+        </td>
+        <th style="text-align: left">Currency</th>
+        <th style="text-align: left">:</th>
+        <td style="text-align: left">&nbsp;&nbsp; ${estimate.cf_currency}</td>
+      </tr>
+      <tr>
+        <th style="text-align: left">Salesman Contact</th>
+        <th style="text-align: left">:</th>
+        <td style="text-align: left">
+          &nbsp;&nbsp; ${estimate.cf_salesman_contact_number}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="margin-top: 20px; width: 100%"><span></span></div>
+<table
+  style="
+    width: 100%;
+    margin-top: 20px;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-family: Calibri;
+  "
+  class="pcs-itemtable"
+  border="0"
+  cellpadding="0"
+  cellspacing="0"
+>
+  <thead>
+    <tr style="height: 32px">
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(89, 180, 216);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 7%;
+        "
+        align="left"
+      >
+        <b>S.No</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(89, 180, 216);
+          padding: 5px 10px 5px 10px;
+          word-wrap: break-word;
+        "
+      >
+        <b>Item Description</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(89, 180, 216);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 18%;
+        "
+        align="right"
+      >
+        <b>Part Number</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(89, 180, 216);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 10%;
+        "
+        align="right"
+      >
+        <b>Qty</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(89, 180, 216);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 11%;
+        "
+        align="right"
+      >
+        <b>UP</b>
+        <td
+        align="right"
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(89, 180, 216);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 11%;
+        "
+      >
+        <b>Tax</b>
+      </td>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          background-color: rgb(89, 180, 216);
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 11%;
+        "
+        align="right"
+      >
+        <b>Amount</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody id="lineitem">
+    <tr>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: left;
+          word-wrap: break-word;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty">%SiNo%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 0px 10px 10px;
+        "
+        valign="top"
+      >
+        <span style="word-wrap: break-word" id="tmp_item_name">%ItemName%</span>
+        <br />
+        <span
+          style="
+            color: black;
+            font-size: 9pt;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+          "
+          id="tmp_item_description"
+          >%ItemDescription%</span
+        >
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty">%ItemSKU%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty">%ItemQty%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_rate">%ItemRate%</span> <br />
+      </td>
+      <td
+      valign="top"
+      style="
+        font-size: 9pt;
+        border-bottom: 1px solid #e3e3e3;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 10px 10px 5px 10px;
+        text-align: right;
+        word-wrap: break-word;
+      "
+    >
+      <span id="tmp_item_rate">%ItemTaxPercent%</span> <br />
+    </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: #000000;
+          text-align: right;
+          padding: 10px 10px 10px 5px;
+          word-wrap: break-word;
+        "
+        valign="top"
+      >
+        %ItemAmount% <br />
+      </td>
+    </tr>
+  </tbody>
+  <tbody id="headerItem">
+    <tr>
+      <td
+        valign="top"
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #eee;
+          color: #000000;
+          padding: 10px 0px 10px 10px;
+        "
+        colspan="5"
+      >
+        <b> %ItemHeaderName%</b>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="width: 100%; margin-top: 1px">
+  <div
+    style="width: 45%; padding: 3px 10px 3px 3px; font-size: 9pt; float: left"
+  >
+    <div style="white-space: pre-wrap"></div>
+  </div>
+  <div style="width: 50%; float: right">
+    <table
+      style="
+        font-size: 9pt;
+        color: #000000;
+        background-color: #ffffff;
+        border-spacing: 0;
+        border-collapse: collapse;
+        font-family: Calibri;
+      "
+      border="0"
+      cellspacing="0"
+      width="100%"
+    >
+      <tbody>
+        <tr
+        style="
+          height: 20px;
+          font-size: 9pt;
+          color: black;
+          border-bottom: 1px solid lightgrey;
+        "
+      >
+        <td valign="middle" align="right" style="padding: 5px 10px 5px 0">
+          Quote Subtotal
+        </td>
+        <td
+          valign="middle"
+          align="right"
+          style="width: 120px; padding: 10px 10px 10px 5px"
+          id="tmp_balance_due"
+        >
+          %EstimateSubTotal%<br />
+        </td>
+      </tr>
+      <tr
+        style="
+          height: 20px;
+          font-size: 9pt;
+          color: black;
+          border-bottom: 1px solid lightgray;
+        "
+      >
+        <td valign="middle" align="right" style="padding: 5px 10px 5px 0">
+          Total Before Tax
+        </td>
+        <td
+          valign="middle"
+          align="right"
+          style="width: 120px; padding: 10px 10px 10px 5px"
+          id="tmp_balance_due"
+        >
+          %EstimateSubTotal% <br />
+        </td>
+      </tr>
+      <tr
+        style="
+          height: 20px;
+          font-size: 9pt;
+          color: black;
+          border-bottom: 1px solid rgb(89, 180, 216);
+        "
+      >
+        <td valign="middle" align="right" style="padding: 5px 10px 5px 0">
+          Total Tax Amount
+        </td>
+        <td
+          valign="middle"
+          align="right"
+          style="width: 120px; padding: 10px 10px 10px 5px"
+          id="tmp_balance_due"
+        >
+          %TaxTotal%<br />
+        </td>
+      </tr>
+      <tr
+        style="
+          height: 20px;
+          background-color: rgb(89, 180, 216);
+          font-size: 9pt;
+          color: black;
+          border-bottom: 1px solid white;
+        "
+      >
+        <td valign="middle" align="right" style="padding: 5px 10px 5px 0">
+          <b>Total Amount</b>
+        </td>
+        <td
+          valign="middle"
+          align="right"
+          style="width: 120px; padding: 10px 10px 10px 5px"
+          id="tmp_balance_due"
+        >
+          <b>%EstimateTotal%</b> <br />
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <br /><br /><br /> <br><br><br><br><br><br>
+  <div style="font-family: Calibri">
+    <h5 style="margin: 0; padding: 0">Notes</h5>
+    <p style="font-size: 9pt; margin: 0; padding: 0">%Notes%</p>
+  </div>
+  <div>
+    <br /><br />
+    <h5 style="padding: 0; margin: 0; font-family: Calibri; font-size: 8pt">
+      STANDARD TERMS &amp; CONDITIONS:
+      <hr
+        width="155px"
+        color="black"
+        style="margin: 0; padding: 0; margin-left: 0%"
+      />
+    </h5>
+    <h6
+      style="
+        font-size: 7pt;
+        height: 11px;
+        padding: 0;
+        margin: 2;
+        background-color: rgb(89, 180, 216);
+        color: black;
+        font-family: Calibri;
+      "
+    >
+      SCOPE OF WORK
+    </h6>
+    <p
+      style="margin: 0; padding: 0; font-size: 8pt; font-family: Calibri"
+      align="justify"
+    >
+      • The scope of work is detailed in the quotation. Any additional services
+      requested by the client will be subject to additional charges. <br />
+      • INEX reserves the right to adjust the quotation if there are changes in
+      the scope of work or if additional services are required.
+    </p>
+    <h6
+      style="
+        font-size: 7pt;
+        height: 11px;
+        padding: 0;
+        margin: 2;
+        background-color: rgb(89, 180, 216);
+        color: black;
+        font-family: Calibri;
+      "
+    >
+      ACCEPTANCE &amp; VALIDITY
+    </h6>
+    <p
+      style="margin: 0; padding: 0; font-size: 8pt; font-family: Calibri"
+      align="justify"
+    >
+      • The issuance of a quotation by INEX constitutes an invitation to treat.
+      Acceptance of the quotation by the client is subject to the terms and
+      conditions herein. <br />
+      • Any alterations to the quotation must be agreed upon in writing by both
+      parties. <br />
+      • This quotation is valid for a period of Specified from the date of
+      issuance. After this period, INEX reserves the right to revise the
+      quotation.
+    </p>
+    <h6
+      style="
+        font-size: 7pt;
+        height: 11px;
+        padding: 0;
+        margin: 2;
+        background-color: rgb(89, 180, 216);
+        color: black;
+        font-family: Calibri;
+      "
+    >
+      QUALITY AND DELIVERY ASSURANCE
+    </h6>
+    <p
+      style="margin: 0; padding: 0; font-size: 8pt; font-family: Calibri"
+      align="justify"
+    >
+      • INEX will make reasonable efforts to ensure that all products and
+      services provided meet agreed-upon quality standards. The client is
+      responsible for notifying INEX &nbsp;&nbsp;&nbsp;of any defects or
+      concerns in a timely manner. <br />
+      • The delivery timeline is outlined in the quotation and is contingent
+      upon timely receipt of all necessary information and materials from the
+      client. <br />
+      • INEX is not liable for delays beyond our control, including but not
+      limited to acts of nature, government actions, or supplier-related issues.
+      <br />
+      • The client agrees to provide INEX with all necessary information,
+      access, and cooperation required for the provision of services <br />
+      • Delays or issues arising from the client's failure to fulfill
+      responsibilities may result in adjustments to the project timeline or
+      additional charges <br />
+      • Inex reserves the right to make partial shipments of backordered items.
+      Customers will be notified in advance of any partial shipments
+    </p>
+    <h6
+      style="
+        font-size: 7pt;
+        height: 11px;
+        padding: 0;
+        margin: 2;
+        background-color: rgb(89, 180, 216);
+        color: black;
+        font-family: Calibri;
+      "
+    >
+      PRICING AND PAYMENT
+    </h6>
+    <p
+      style="margin: 0; padding: 0; font-size: 8pt; font-family: Calibri"
+      align="justify"
+    >
+      • The prices quoted are valid for the period specified in the quotation.
+      <br />
+      • Payment terms is per agreement and Payment shall be made in accordance
+      with the agreed schedule. <br />
+      • All prices are exclusive of applicable taxes, which will be added to the
+      final invoice <br />
+      • The prices quoted in this document are in currency mentioned in Notes
+      and are exclusive of any applicable taxes unless otherwise stated. INEX
+      reserves the right to &nbsp;&nbsp;&nbsp;adjust prices in case of changes
+      in project requirements, scope, or market conditions. <br />
+      • Prices for backordered items are subject to change. Customers will be
+      notified of any price changes before shipment
+    </p>
+    <h6
+      style="
+        font-size: 7pt;
+        height: 11px;
+        padding: 0;
+        margin: 2;
+        background-color: rgb(89, 180, 216);
+        color: black;
+        font-family: Calibri;
+      "
+    >
+      AMENDMENTS &amp; TERMINATION
+    </h6>
+    <p
+      style="margin: 0; padding: 0; font-size: 8pt; font-family: Calibri"
+      align="justify"
+    >
+      • INEX reserves the right to amend these terms and conditions at any time.
+      Updated terms will be communicated to the client and will apply to
+      futuretransactions. <br />
+      • Either party may terminate the project with written notice. Termination
+      costs may apply, depending on the stage of the project and the
+      circumstances of &nbsp;&nbsp;&nbsp;termination. <br />
+      • INEX shall not be liable for any failure or delay in performance due to
+      circumstances beyond its control, such as natural disasters, acts of
+      government, or other force &nbsp;&nbsp;&nbsp;majeure events. <br />
+      • Any changes to the scope of services or other aspects of the project
+      must be agreed upon in writing by both parties
+    </p>
+    <h6
+      style="
+        font-size: 7pt;
+        height: 11px;
+        padding: 0;
+        margin: 2;
+        background-color: rgb(89, 180, 216);
+        color: black;
+        font-family: Calibri;
+      "
+    >
+      CONFIDENTIALITY &amp; LIABILITY
+    </h6>
+    <p
+      style="margin: 0; padding: 0; font-size: 8pt; font-family: Calibri"
+      align="justify"
+    >
+      • Both parties agree to maintain the confidentiality of any sensitive
+      information exchanged during the course of the project. <br />
+      • INEX liability for any direct or indirect damages arising from this
+      project is limited to the total value of this quotation.
+    </p>
+    <h6
+      style="
+        font-size: 7pt;
+        height: 11px;
+        padding: 0;
+        margin: 2;
+        background-color: rgb(89, 180, 216);
+        color: black;
+        font-family: Calibri;
+      "
+    >
+      GOVERNING LAW
+    </h6>
+    <p
+      style="margin: 0; padding: 0; font-size: 8pt; font-family: Calibri"
+      align="justify"
+    >
+      • This agreement is governed by and construed in accordance with the laws
+      of the United Arab Emirates. Any disputes arising from this agreement
+      shall be subject to &nbsp;&nbsp;&nbsp;the exclusive jurisdiction of Saudi
+      Arabian courts.
+    </p>
+    <h5 style="font-family: Calibri; margin: 4; padding: 0">
+      Notice:
+      <hr
+        width="40px"
+        color="black"
+        style="margin: 0; padding: 0; margin-left: 0px"
+      />
+    </h5>
+    <p
+      align="justify"
+      style="margin: 0; padding: 0; font-family: Calibri; font-size: 6pt"
+    >
+      <b>'INEX':</b> Refers to <b>INEX INFRA GENERAL TRADING CO LLC</b> Sole
+      Establishments registered and operating under the laws of the relevant
+      jurisdiction, with its principal place of business at United Arab Emirates
+      For all purposes within this document, 'INEX' is used as an abbreviation
+      and reference to <b>INEX INFRA GENERAL TRADING CO LLC</b> The use of
+      'INEX' in this document is intended solely for convenience and brevity and
+      does not alter or affect the legal identity, rights, or obligations of to
+      <b>INEX INFRA GENERAL TRADING CO LLC </b>in any manner. <br /><br />
+      <b
+        ><i
+          >For inquiries or concerns regarding the quotation or these terms and
+          conditions, please contact us.</i
+        ></b
+      >
+    </p>
+  </div>
+</div>

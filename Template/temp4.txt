@@ -1,0 +1,415 @@
+<meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta charset="UTF-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<title>Document</title>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<div style="font-family: Open Sans; font-size: 10pt; color: #333333">
+  <div style="padding: 0 0.4in 0 0.55in">
+    <div style="display: table; width: 100%">
+      <div style="float: left; width: 50%">
+        <div>%ScaledLogoImage%</div>
+        <br />
+      </div>
+      <h4 class="hed">PARTNER REVENUE REPORT</h4>
+      <p class="month">${purchaseorder.cf_month}</p>
+      <hr class="ln" />
+    </div>
+    <table
+      style="
+        width: 100%;
+        margin-top: 30px;
+        table-layout: fixed;
+        border-spacing: 0;
+        border-collapse: collapse;
+      "
+    >
+      <tbody>
+        <tr class="cont">
+          <td style="width: 50%; vertical-align: top; word-wrap: break-word">
+            <p class="part">
+              Partner Name :&nbsp;${purchaseorder.cf_channel_name}
+            </p>
+            <p class="part">Contact :&nbsp;%CustomerName%</p>
+          </td>
+          <td
+            align="right"
+            style="vertical-align: bottom; word-wrap: break-word"
+          >
+            <table
+              width="285"
+              height="96"
+              cellspacing="0"
+              cellpadding="0"
+              border="0"
+              style="
+                table-layout: fixed;
+                word-wrap: break-word;
+                border-spacing: 0;
+                border-collapse: collapse;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td
+                    style="
+                      padding: 5px 10px 5px 0px;
+                      font-size: 10pt;
+                      text-align: right;
+                    "
+                  >
+                    <span style="color: #ff0000">Gallery Vision:</span>
+                  </td>
+                  <td style="text-align: right">
+                    <font size="2">
+                      ${purchaseorder.cf_provider_commission}
+                    </font>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: 5px 10px 5px 0px;
+                      font-size: 10pt;
+                      text-align: right;
+                    "
+                  >
+                    <span style="color: #ff0000"
+                      >${purchaseorder.cf_channel_name}</span
+                    >
+                  </td>
+                  <td style="text-align: right">
+                    <font size="2">${purchaseorder.cf_channel_commission}</font>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: 5px 10px 5px 0px;
+                      font-size: 10pt;
+                      text-align: right;
+                    "
+                  >
+                    <span style="color: #ff0000"> Total(in INR): :</span>
+                  </td>
+                  <td style="text-align: right">%PO_SubTotal%</td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr color="red" />
+    <br /><br /><br />
+    <div style="margin-top: 20px; width: 100%"><span></span></div>
+    <table class="table123">
+      <thead>
+        <tr style="height: 32px">
+          <th
+            style="font-size: 10pt; color: #000000; padding: 5px 10px 5px 10px"
+          >
+            Channel Name
+          </th>
+          <th
+            style="
+              font-size: 10pt;
+              color: #000000;
+              padding: 5px 10px 5px 10px;
+              word-wrap: break-word;
+            "
+            align="left"
+          >
+            Total Earning$
+          </th>
+          <th
+            style="
+              font-size: 10pt;
+              color: #000000;
+              padding: 5px 10px 5px 10px;
+              word-wrap: break-word;
+              width: 11%;
+            "
+            align="left"
+          >
+            US Views
+          </th>
+          <th
+            style="
+              font-size: 10pt;
+              color: #000000;
+              padding: 5px 10px 5px 10px;
+              word-wrap: break-word;
+              width: 11%;
+            "
+            align="left"
+          >
+            US Withholding$
+          </th>
+          <th
+            style="
+              font-size: 10pt;
+              color: #000000;
+              padding: 5px 10px 5px 10px;
+              word-wrap: break-word;
+              width: 11%;
+            "
+            align="left"
+          >
+            Final$
+          </th>
+          <th
+            style="
+              font-size: 10pt;
+              color: #000000;
+              padding: 5px 10px 5px 10px;
+              word-wrap: break-word;
+              width: 11%;
+            "
+            align="left"
+          >
+            Ex Rate
+          </th>
+          <th
+            style="
+              font-size: 10pt;
+              color: #000000;
+              padding: 5px 10px 5px 10px;
+              word-wrap: break-word;
+            "
+            align="left"
+          >
+            INR
+          </th>
+        </tr>
+      </thead>
+      <thead></thead>
+      <tbody></tbody>
+      <tbody id="lineitem">
+        <tr>
+          <td
+            style="
+              font-size: 10pt;
+              border-bottom: 1px solid #e3e3e3;
+              background-color: #ffffff;
+              color: #000000;
+              padding: 10px 0px 10px 10px;
+            "
+            valign="top"
+          >
+            <span>${purchaseorder.cf_channel_name}</span>
+          </td>
+          <td
+            style="
+              font-size: 10pt;
+              border-bottom: 1px solid #e3e3e3;
+              background-color: #ffffff;
+              color: #000000;
+              padding: 10px 0px 10px 10px;
+            "
+            valign="top"
+          >
+            <span>${PURCHASE ORDER.Item.CF.Total Earnings.Value}</span>
+          </td>
+          <td
+            style="
+              font-size: 10pt;
+              border-bottom: 1px solid #e3e3e3;
+              background-color: #ffffff;
+              color: #000000;
+              padding: 10px 0px 10px 10px;
+            "
+            valign="top"
+          >
+            <span>${PURCHASE ORDER.Item.CF.US Views.Value}</span>
+          </td>
+          <td
+            style="
+              font-size: 10pt;
+              border-bottom: 1px solid #e3e3e3;
+              background-color: #ffffff;
+              color: #000000;
+              padding: 10px 0px 10px 10px;
+            "
+            valign="top"
+          >
+            <span>${PURCHASE ORDER.Item.CF.US Withholdings.Value}</span>
+          </td>
+          <td
+            style="
+              font-size: 10pt;
+              border-bottom: 1px solid #e3e3e3;
+              background-color: #ffffff;
+              color: #000000;
+              padding: 10px 0px 10px 10px;
+            "
+            valign="top"
+          >
+            <span>%ItemQty%</span>
+          </td>
+          <td
+            style="
+              font-size: 10pt;
+              border-bottom: 1px solid #e3e3e3;
+              background-color: #ffffff;
+              color: #000000;
+              padding: 10px 0px 10px 10px;
+            "
+            valign="top"
+          >
+            <span>%ItemRateInBCY%</span>
+          </td>
+          <td
+            style="
+              font-size: 10pt;
+              border-bottom: 1px solid #e3e3e3;
+              background-color: #ffffff;
+              color: #000000;
+              padding: 10px 0px 10px 10px;
+            "
+            valign="top"
+          >
+            <span>%ItemAmount%</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp;&nbsp;<br /><br /><br />
+    <div class="tds">
+      ${purchaseorder.cf_tcs} ${purchaseorder.cf_tcs_amount}
+    </div>
+    <br /><br /><br /><br />
+    <table class="tab2">
+      <thead>
+        <tr>
+          <th
+            style="
+              font-size: 10pt;
+              color: #000000;
+              padding: 5px 10px 5px 10px;
+              word-wrap: break-word;
+              width: 11%;
+            "
+            align="left"
+          >
+            Gallery Vision
+          </th>
+          <th
+            style="
+              font-size: 10pt;
+              color: #000000;
+              padding: 5px 10px 5px 10px;
+              word-wrap: break-word;
+              width: 11%;
+            "
+            align="left"
+          >
+            ${purchaseorder.cf_provider_total}
+          </th>
+        </tr>
+        <tr>
+          <th
+            style="
+              font-size: 10pt;
+              color: #000000;
+              padding: 5px 10px 5px 10px;
+              word-wrap: break-word;
+              width: 11%;
+            "
+            align="left"
+          >
+            Total Payout(INR)
+          </th>
+          <th
+            style="
+              font-size: 10pt;
+              color: #000000;
+              padding: 5px 10px 5px 10px;
+              word-wrap: break-word;
+              width: 11%;
+            "
+            align="left"
+            class="th"
+          >
+            ${purchaseorder.cf_payout_total}
+          </th>
+        </tr>
+      </thead>
+    </table>
+    <br />
+    <hr color="lightgray" />
+    <hr color="red" />
+  </div>
+</div>
+<style>
+  .hed {
+    color: rgb(253, 91, 91);
+    text-align: right;
+    font-size: x-large;
+  }
+  .ln {
+    height: 3px;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+  }
+  .month {
+    text-align: right;
+  }
+  .part {
+    text-align: left;
+    font-size: larger;
+  }
+  .table123 {
+    position: relative;
+    top: 50%;
+    border-collapse: collapse;
+    border: 1px solid rgb(221, 221, 221);
+    table-layout: fixed;
+    margin-top: 20px;
+    border-left: none;
+    border-right: none;
+    height: 150px;
+  }
+  .table123 th {
+    height: 50px;
+    background-color: #ddd;
+  }
+  .tab2 {
+    border: 1;
+    color: black;
+    height: 5px;
+    margin-top: -40px;
+    background-color: rgb(221, 221, 221);
+  }
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgb(221, 221, 221);
+  }
+  .lin2 {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+  }
+  .tds {
+    color: black;
+    text-align: right;
+    font-size: 10pt;
+  }
+  .th {
+    background-color: rgb(248, 89, 89);
+  }</style
+><style media="all" type="text/css">
+  #lineItem tr {
+    page-break-after: auto;
+  }
+</style>

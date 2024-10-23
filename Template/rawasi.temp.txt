@@ -1,0 +1,430 @@
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<style type="text/css" media="all">
+  #lineItem tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+</style>
+<div>
+  <h2>Tax Invoice <br /><b style="color: gray">فاتورة ضريبية</b></h2>
+</div>
+
+<div>
+  <table  style="width: 100%;">
+    <tr>
+      <th style="text-align: left;padding-bottom: 100px; width: 40%; ">
+        Bill to <br><span style="color: gray;">العميل</span><br><span style="color: gray;">%ContactCompanyName%</span> <br>
+        VAT number <br><span style="color: gray;">رقم التسجيل الضريبي</span><br><span style="color: gray;">%ContactTRN%</span> <br>
+        Purchase Order <br><span style="color: gray;">أمر شراء</span><br><span style="color: gray;">%P.O.Number%</span>
+      </th>
+      <th style="text-align: left; padding-bottom: 110px; width: 20%;">Invoice number <br><span style="color: gray;">رقم الفاتورة</span><br><span style="color: gray;">%InvoiceNumber%</span> <br>
+          Date <br><span style="color: gray;">التاريخ</span><br><span style="color: gray;">%InvoiceDate%</span> <br>
+          Due Date <br><span style="color: gray;">تاريخ اإلستحقاق</span><br><span style="color: gray;">%DueDate%</span></th>
+      <th style="text-align: right;"> %ScaledLogoImage%<br>Al-Rawasi General Contracting Est.</b> <br /><span style="color: gray;">
+        Building-9369 Secondary-2339<br />
+        P Code-32233, Al-Amir M. Bin <br />
+        Fahd Road-Al Tubayshi Dist <br />
+        Dammam <br />
+        Kingdom of Saudi Arabia VAT number <br />رقم التسجيل الضريبي
+        <br />300705002700003 <br /><br />
+        Total due <br />
+        الرصيد المستحق <br /> </span>
+        <p>
+          <font size="5" color="#000000"><b>%InvoiceTotal%</b></font>
+        </p></th>
+    </tr>
+  </table>
+</div>
+<div style="margin-top: 20px; width: 100%"><span></span></div>
+<table
+  cellspacing="0"
+  cellpadding="0"
+  border="0"
+  class="pcs-itemtable"
+  style="
+    width: 100%;
+    margin-top: 20px;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+  "
+>
+  <thead>
+    <tr style="height: 32px">
+      <td
+        align="left"
+        style="
+          font-size: 10pt;
+          color: black;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 7%;
+        "
+      >
+        <b>S.No</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          padding: 5px 10px 5px 10px;
+          word-wrap: break-word;
+          width: 18%;
+        "
+      >
+        <b>Item / Description</b> <br /><b style="color: gray">المنتج الوصف</b>
+      </td>
+      <td
+        align="right"
+        style="
+          font-size: 10pt;
+          color: black;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 8%;
+        "
+      >
+        <b>Quantity</b> <br /><b style="color: gray">الكمية</b>
+      </td>
+      <td
+        align="right"
+        style="
+          font-size: 10pt;
+          color: black;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 10%;
+        "
+      >
+        <b>Price</b> <br /><b style="color: gray"> السعر</b>
+      </td>
+      <td
+        align="right"
+        style="
+          font-size: 10pt;
+          color: black;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 14%;
+        "
+      >
+        <b>Taxable amount </b> <br /><b style="color: gray">
+          المبلغ الخاضع للضريبة</b
+        >
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 11%;
+        "
+        align="right"
+      >
+        <b>VAT</b> <br /><b style="color: gray"> القيمة المضافة</b>
+      </td>
+      <td
+        align="right"
+        style="
+          font-size: 10pt;
+          color: black;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 11%;
+        "
+      >
+        <b>Amount</b> <br /><b style="color: gray">المجموع</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody id="lineitem">
+    <tr>
+      <td
+        valign="top"
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: gray;
+          padding: 10px 10px 5px 10px;
+          text-align: left;
+          word-wrap: break-word;
+          padding-bottom: 20px;
+        "
+      >
+        <span id="tmp_item_qty">%SiNo%</span> <br />
+      </td>
+      <td
+        valign="top"
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: gray;
+          padding: 10px 0px 10px 10px;
+        "
+      >
+        <span id="tmp_item_name" style="word-wrap: break-word">%ItemName%</span>
+        <br />
+        <span
+          id="tmp_item_description"
+          style="
+            color: gray;
+            font-size: 9pt;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+          "
+          >%ItemDescription%</span
+        >
+      </td>
+      <td
+        valign="top"
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: gray;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+        "
+      >
+        <span id="tmp_item_qty">%ItemQty%</span> <br />
+      </td>
+      <td
+        valign="top"
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: gray;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+        "
+      >
+        <span id="tmp_item_qty">%ItemRate%</span> <br />
+      </td>
+      <td
+        valign="top"
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: gray;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+        "
+      >
+        %ItemAmount%
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: gray;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_rate">%ItemTaxPercent%</span> <br />
+      </td>
+      <td
+        valign="top"
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #ffffff;
+          color: gray;
+          text-align: right;
+          padding: 10px 10px 10px 5px;
+          word-wrap: break-word;
+        "
+      >
+        %ItemAmount% <br />
+      </td>
+    </tr>
+  </tbody>
+  <tbody id="headerItem">
+    <tr>
+      <td
+        colspan="5"
+        style="
+          font-size: 9pt;
+          border-bottom: 1px solid #e3e3e3;
+          background-color: #eee;
+          color: gray;
+          padding: 10px 0px 10px 10px;
+        "
+        valign="top"
+      >
+        <b> %ItemHeaderName%</b>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="width: 100%; margin-top: 1px">
+  <div
+    style="width: 45%; padding: 3px 10px 3px 3px; font-size: 9pt; float: left"
+  >
+    <div style="white-space: pre-wrap"></div>
+  </div>
+  <div style="width: 50%; float: right">
+    <table
+      width="100%"
+      cellspacing="0"
+      border="0"
+      style="
+        font-size: 9pt;
+        color: gray;
+        background-color: #ffffff;
+        border-spacing: 0;
+        border-collapse: collapse;
+      "
+    >
+      <tbody>
+        <tr style="height: 20px; font-size: 9pt; color: black">
+          <td style="padding: 5px 10px 5px 0" align="right" valign="middle">
+            <b>Subtotal</b> <br /><b style="color: gray"> المجموع الفرعي</b>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="width: 120px; padding: 10px 10px 10px 5px"
+            align="right"
+            valign="middle"
+          >
+            %InvoiceSubTotal%
+          </td>
+        </tr>
+        <tr style="height: 20px; font-size: 9pt; color: black">
+          <td style="padding: 5px 10px 5px 0" align="right" valign="middle">
+            <b>Total VAT</b> <br /><b style="color: grey"
+              >إجمالي ضريبة القيمة المضافة</b
+            >
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="width: 120px; padding: 10px 10px 10px 5px"
+            align="right"
+            valign="middle"
+          >
+            %TaxTotal%
+          </td>
+        </tr>
+        <tr
+          style="
+            height: 20px;
+            font-size: 9pt;
+            color: black;
+            border-bottom: 1px solid white;
+          "
+        >
+          <td style="padding: 5px 10px 5px 0" align="right" valign="middle">
+            <b>Total <br /><b style="color: gray">اإلجمالي</b> </b>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="width: 120px; padding: 10px 10px 10px 5px"
+            align="right"
+            valign="middle"
+          >
+            <b>%InvoiceTotal%</b>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br />
+  <h5 style="font-family: Calibri; margin: 0; padding: 0">%EInvoiceQRImg%</h5>
+  <p
+    style="
+      color: gray;
+      margin: 0;
+      font-family: Calibri;
+      padding: 0;
+      font-size: 9pt;
+    "
+  >
+    This QR code is encoded as per ZATCA e-invoicing requirements <br />
+    رمزاإلستجابة السريعة مشّفربحسب متطلبات هيئة الزكاة والضريبة والجمارك للفوترة
+    <br />اإللكترونية
+  </p>
+  <p style="color: gray">
+    Notes <br />
+    مالحظات
+  </p>
+  <p>%Notes%</p>
+</div>
+<div style="color: rgb(51, 51, 51); font-family: " open="">
+  <label style="font-size: 10pt" id="tmp_vat_summary_label" class="pcs-label"
+    ><b>BANK ACCOUNT DETAILS</b></label
+  >
+  <table class="einv-details-table" style="font-size: 10pt; border: 0px">
+    <tbody class="details-table-body">
+      <tr class="einv-details-row">
+        <td width="17%">ACCOUNT NAME <br />اسم الحساب</td>
+        <td width="47%" style="padding-bottom: 10px">
+          : Al-Rawasi Contracting Est.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          BANK NAME <br />
+          اسم البنك
+        </td>
+        <td>: Saudi National bank</td>
+      </tr>
+      <tr>
+        <td>
+          ACCOUNT NO. <br />
+          رقم الحساب
+        </td>
+        <td>: 05100000392409</td>
+      </tr>
+      <tr>
+        <td>IBAN NO. <br />رقم الأيبان</td>
+        <td>: SA1410000005100000392409</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+</div>

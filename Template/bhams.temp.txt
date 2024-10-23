@@ -1,0 +1,592 @@
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<style type="text/css" media="all">
+  #lineItem tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+</style>
+<div style="margin: 0; padding: 0; width: 100%"><span></span></div>
+<table
+  cellspacing="0"
+  cellpadding="0"
+  border="1"
+  class="pcs-itemtable"
+  style="
+    width: 100%;
+    margin-top: 20px;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-right: 1px solid #067ba5;
+    border-left: 1px solid #067ba5;
+    border-bottom: 1px solid #067ba5;
+    border-top: 1px solid #067ba5;
+    border-color: #067ba5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+  "
+>
+  <thead>
+    <tr>
+      <th style="border-right: 1px solid #067ba5; font-size: 10pt; height: 150px" colspan="10">
+        <div style="float: right; font-size: large">
+          اقتباس<br />Quotation&nbsp;
+        </div>
+        <div style="float: left">&nbsp;%ScaledLogoImage%</div>
+        <div style="margin: 0 auto; margin-right: 220px">%EInvoiceQRImg%</div>
+      </th>
+    </tr>
+    <tr>
+      <td
+        colspan="5"
+        style="
+          border-right: 1px solid #067ba5;
+          border-top: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+      >
+        <span style="font-size: 10pt">&nbsp;</span
+        ><font size="3">%CompanyName% </font><br /><span style="font-size: 10pt"
+          >&nbsp;%SecCompanyName% </span
+        ><br /><span style="font-size: 10pt"
+          >&nbsp;%CompanyStreetAddress1% %CompanyStreetAddress2% </span
+        ><br /><span style="font-size: 10pt">&nbsp;</span
+        >%CompanyCity%&nbsp;%CompanyState%<br
+          style="font-size: 13.3333px"
+        /><span style="font-size: 13.3333px">&nbsp;%CompanyCountry%&nbsp;</span
+        ><span style="font-size: 10pt">%CompanyPostalCode%</span><br /><span
+          style="font-size: 10pt"
+          >&nbsp;VAT No:%CompanyTRN%
+        </span>
+      </td>
+      <th
+        colspan="5"
+        style="
+          border-top: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+          text-align: left;
+        "
+      >
+        <table style="width: 100%; font-size: 10pt">
+          <tbody>
+            <tr>
+              <th style="text-align: left">
+                Quote No/ رقم الإقتباس<br />Date/ التاريخ <br />
+                Po No/ رقم سري<br />
+                Cust.Ref.No/ الرقم المرجعي العملاء <br />
+                Pay.Term/ شروط الدفع
+              </th>
+              <td>
+                : %EstimateNumber%<br />: %EstimateDate% <br />: %Ref.Number%<br />:&nbsp;${contact.cf_cust_ref_no}<br />:
+                %PaymentTerms%
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </th>
+    </tr>
+    <tr>
+      <td colspan="5" style="border-right: 1px solid #067ba5">
+        &nbsp;<b>Billing Address/عنوان وصول الفواتير</b
+        ><br />&nbsp;%CustomerName%&nbsp;%CustomerNameSecondary%<br />&nbsp;%CustomerBAddress%
+        <br />&nbsp;%CustomerBCity% %CustomerBDistrict%
+        <br />&nbsp;%CustomerBState% %CustomerBCountry% <br />&nbsp;VAT No:
+        %ContactTRN%
+      </td>
+      <td colspan="5">
+        <b>&nbsp;Shipping Address/عنوان الشحن</b
+        ><br />&nbsp;%CustomerName%&nbsp;%CustomerNameSecondary%<br />&nbsp;%CustomerSAddress%<br />&nbsp;%CustomerSCity%
+        %CustomerSDistrict% <br />&nbsp;%CustomerSState% %CustomerSCountry%<br />&nbsp;VAT
+        No: %ContactTRN%
+      </td>
+    </tr>
+  </thead>
+</table>
+<div style="margin: 0; width: 100%"><span></span></div>
+<table
+  style="
+    width: 100%;
+    margin: 0;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: none;
+    border-color: #067ba5;
+    border-left: 1px solid #067ba5;
+    border-right: 1px solid #067ba5;
+    border-bottom: 1px solid #067ba5;
+  "
+  class="pcs-itemtable"
+  border="1"
+  cellpadding="0"
+  cellspacing="0"
+>
+  <thead>
+    <tr style="height: 32px">
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 4%;
+          height: 35px;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        align="left"
+      >
+        <b>S.No&nbsp; رقم سري</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 25%;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        align="left"
+      >
+        <b>Product &amp; Description&nbsp; وصف / اسم المنتج </b>
+      </td>
+      <td
+        align="right"
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 5%;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+      >
+        <b>Qty&nbsp; كمية</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 6%;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        align="right"
+      >
+        <b>Price&nbsp; سعر</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 7%;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        align="right"
+      >
+        <b>Discount&nbsp; تخفيض</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 6%;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        align="right"
+      >
+        <b>Tax %&nbsp; ضريبة</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 6%;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        align="right"
+      >
+        <b>Vat Amt&nbsp; قيمة الضريبة</b>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 6%;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        align="right"
+      >
+        <b>Amount&nbsp; كمية</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody id="lineitem">
+    <tr>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: left;
+          word-wrap: break-word;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty">%SiNo%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: left;
+          word-wrap: break-word;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty"
+          >%ItemName% %SecItemName% %ItemDescription% %ItemSKU%</span
+        >
+        <br />
+      </td>
+      <td
+        valign="top"
+        style="
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
+          padding: 10px 10px 5px;
+          text-align: right;
+          overflow-wrap: break-word;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+      >
+        <span style="font-size: 9pt" id="tmp_item_qty">%ItemQty%<br /></span
+        ><font size="1"> %UsageUnit% </font>
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_qty">%ItemRate%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_rate">%EntityDiscountAmount%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_rate">%ItemTaxPercent%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        valign="top"
+      >
+        <span id="tmp_item_rate">%ItemTaxAmount%</span> <br />
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          text-align: right;
+          padding: 10px 10px 10px 5px;
+          word-wrap: break-word;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+        valign="top"
+      >
+        %ItemAmount% <br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="width: 100%; margin: 0">
+  <div style="width: 45%; font-size: 9pt; float: left">
+    <div style="white-space: pre-wrap"></div>
+  </div>
+  <div style="width: 100%; float: right">
+    <table
+      style="
+        font-size: 9pt;
+        color: #000000;
+        background-color: #ffffff;
+        border-spacing: 0;
+        border-collapse: collapse;
+        border-top: none;
+        margin: 0;
+        border-color: #067ba5;
+        border-right: 1px solid #067ba5;
+        border-left: 1px solid #067ba5;
+      "
+      border="1"
+      cellspacing="0"
+      width="100%"
+    >
+      <tbody>
+        <tr style="height: 30px; font-size: 9pt; color: black; width: 100%">
+          <td style="border-top: none; border-bottom: none"></td>
+          <td
+            style="
+              border-top: none;
+              border-bottom: none;
+              width: 20%;
+              padding: 5px 10px 5px 0;
+              border-left: 1px solid #067ba5;
+              border-right: 1px solid #067ba5;
+            "
+            align="right"
+            valign="middle"
+          >
+            <b
+              >Taxable Amount / <br />
+              المبلغ الخاضع للضريبة
+            </b>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="
+              border-top: none;
+              border-bottom: none;
+              width: 9%;
+              padding: 10px 10px 10px 5px;
+              border-left: 1px solid #067ba5;
+              border-right: 1px solid #067ba5;
+            "
+            align="right"
+            valign="middle"
+          >
+            <b>%EstimateSubTotal%</b>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-top: none; border-bottom: none">
+            &nbsp;
+            <h4 style="text-align: left; margin: 0px">
+              <span style="font-size: ">&nbsp;</span
+              ><font size="1">Amount in words: %TotalInWords%</font>
+            </h4>
+          </td>
+          <td
+            style="
+              border-left: 1px solid #067ba5;
+              border-bottom: 1 px solid #067ba5;
+              border-right: 1px solid #067ba5;
+              border-top: none;
+              width: 22%;
+              padding: 5px 10px 5px 0;
+            "
+            align="right"
+            valign="middle"
+          >
+            <b
+              >VAT/ <br />
+              قيمة الضريبة
+            </b>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="
+              width: 10%;
+              border-top: none;
+              width: 5%;
+              padding: 10px 10px 10px 5px;
+              border-bottom: 1px solid #067ba5;
+              border-left: 1px solid #067ba5;
+              border-right: 1px solid #067ba5;
+            "
+            align="right"
+            valign="middle"
+          >
+            <b>%TaxTotal%</b>
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              border-bottom: 1px solid #067ba5;
+              border-left: 1px solid #067ba5;
+              border-right: 1px solid #067ba5;
+              border-top: none;
+            "
+          >
+            &nbsp;
+          </td>
+          <td
+            style="
+              border-left: 1px solid #067ba5;
+              border-bottom: 1px solid #067ba5;
+              border-right: 1px solid #067ba5;
+              border-top: 1px solid #067ba5;
+              width: 22%;
+              padding: 5px 10px 5px 0;
+            "
+            align="right"
+            valign="middle"
+          >
+            <b
+              >Total Amount/ <br />
+              المبلغ الإجمالي</b
+            >
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="
+              border-top: 1px solid #067ba5;
+              border-bottom: 1px solid #067ba5;
+              border-top: none;
+              width: 5%;
+              padding: 10px 10px 10px 5px;
+            "
+            align="right"
+            valign="middle"
+          >
+            <b>%EstimateTotal%</b>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <table
+        border="1"
+        style="
+          font-size: 10pt;
+          border-collapse: collapse;
+          width: 100%;
+          border-color: #067ba5;
+          border-left: 1px solid #067ba5;
+          border-top: none;
+          border-right: 1px solid #067ba5;
+          border-bottom: 1px solid #067ba5;
+        "
+      >
+        <tbody>
+          <tr>
+            <td
+              colspan="10"
+              style="border-right: 1 px solid #067ba5; border-top: none"
+            >
+              <p style="margin: 0; padding: 0; text-align: left">%Notes%</p>
+              <h4
+                style="
+                  background-color: rgb(54, 96, 135);
+                  width: 30%;
+                  height: 15px;
+                  margin: 0;
+                  padding: 0;
+                "
+              >
+                <font color="#ffffff">Our Bank details/تفاصيل الدعم</font>
+              </h4>
+              <p
+                style="
+                  margin: 0;
+                  padding: 0;
+                  font-size: smaller;
+                  text-align: left;
+                "
+              >
+                <i
+                  >ACCOUNT NAME: NATIONAL SUPPLIES TRADING EST,&nbsp; &nbsp;
+                  BANK NAME : ALINMA BANK <br />
+                  ACCOUNT NUMBER : 68205094012000&nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp;IBAN : SA0805000068205094012000
+                </i>
+              </p>
+              <h5 style="float: right"><i>Customer's Signature</i></h5>
+              <i> <h5 style="float: left">Prepared by Signature</h5></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,657 @@
+<meta content="text/html; charset=utf-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta
+  http-equiv="content-type"
+  content="text/html; charset=UTF-8"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta
+  content="text/html; charset=UTF-8"
+  http-equiv="content-type"
+/><meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<style type="text/css" media="all">
+  #lineItem tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+</style>
+<div style="margin: 0; padding: 0; width: 100%"><span></span></div>
+<table
+  cellspacing="0"
+  cellpadding="0"
+  border="1"
+  class="pcs-itemtable"
+  style="
+    width: 100%;
+    margin-top: 20px;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-color: black;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+  "
+>
+  <thead>
+    <tr>
+      <th style="border-right: 1px solid black; height: 150px" colspan="10">
+        <div style="float: right; border-right: #000000; margin-top: 25px">
+          <font size="5"> فاتورة ضريبية<br /></font
+          ><font face="Calibri"
+            ><font size="5">TAX INVOICE&nbsp;</font
+            ><font size="4">&nbsp; </font></font
+          >
+        </div>
+        <div style="font-size: 10pt; margin-top: 4px; float: left">
+          <font face="Calibri">&nbsp; %ScaledLogoImage%</font>
+        </div>
+        <div style="font-size: 10pt; margin: 25px 220px 0px auto">
+          <font face="Calibri">&nbsp; &nbsp; &nbsp; &nbsp;%EInvoiceQRImg%</font>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <td
+        colspan="5"
+        style="
+          border-right: 1px solid black;
+          border-top: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+      >
+        <font face="Calibri"
+          ><span style="font-size: 10pt">&nbsp;</span
+          ><font size="2"><b>%CompanyName% </b></font><br /><span
+            style="font-size: 10pt"
+            >&nbsp;%SecCompanyName% </span
+          ><br /><span style="font-size: 10pt"
+            >&nbsp;%CompanyStreetAddress1% %CompanyStreetAddress2% </span
+          ><br /><span style="font-size: 10pt">&nbsp;</span>%CompanyCity%
+          %CompanyState%<br style="font-size: 13.3333px" /><span
+            style="font-size: 13.3333px"
+            >&nbsp;%CompanyCountry%&nbsp;</span
+          ><span style="font-size: 10pt">%CompanyPostalCode%</span><br /><span
+          style="font-size: 10pt"
+          >&nbsp;C.R No:2062617003
+        </span> <br><span
+            style="font-size: 10pt"
+            >&nbsp;VAT No:%CompanyTRN%
+          </span>
+        </font>
+      </td>
+      <th
+        colspan="5"
+        style="
+          border-top: 1px solid black;
+          border-bottom: 1px solid black;
+          text-align: left;
+        "
+      >
+        <table style="width: 100%; font-size: 10pt">
+          <tbody>
+            <tr>
+              <th style="text-align: left">
+                <font face="Calibri"
+                  >Invoice No/ رقم الإقتباس<br />Date/ التاريخ <br />
+                  Po No/ رقم سري<br />
+                  Pay.Term/ شروط الدفع
+                </font>
+              </th>
+              <td>
+                <font face="Calibri"> :&nbsp;</font>%InvoiceNumber%<font
+                  face="Calibri"
+                  ><br />:&nbsp;</font
+                >%InvoiceDate%<font face="Calibri"><br />:&nbsp;</font
+                >%P.O.Number%<font face="Calibri"><br />:&nbsp;</font
+                >%PaymentTerms%
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </th>
+    </tr>
+    <tr>
+      <td colspan="5" style="border-right: 1px solid black">
+        <font face="Calibri">
+          &nbsp;<b>Billing Address/عنوان وصول الفواتير</b
+          ><br />&nbsp;%CustomerName%&nbsp;%CustomerNameSecondary%<br />&nbsp;%CustomerBAddress%
+          <br />&nbsp;%CustomerBCity% %CustomerBDistrict%
+          <br />&nbsp;%CustomerBState% %CustomerBCountry% <br />&nbsp;VAT No:
+          %ContactTRN%
+        </font>
+      </td>
+      <td colspan="5">
+        <font face="Calibri"
+          ><b>&nbsp;Shipping Address/عنوان الشحن</b
+          ><br />&nbsp;%CustomerName%&nbsp;%CustomerNameSecondary%<br />&nbsp;%CustomerSAddress%<br />&nbsp;%CustomerSCity%
+          %CustomerSDistrict% <br />&nbsp;%CustomerSState% %CustomerSCountry%<br />&nbsp;VAT
+          No: %ContactTRN%
+        </font>
+      </td>
+    </tr>
+  </thead>
+</table>
+<div style="margin: 0; width: 100%">
+  <font face="Calibri"><span></span></font>
+</div>
+<table
+  style="
+    width: 100%;
+    margin: 0;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: none;
+    border-color: black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  "
+  class="pcs-itemtable"
+  border="1"
+  cellpadding="0"
+  cellspacing="0"
+>
+  <thead>
+    <tr style="height: 32px">
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 4%;
+          height: 35px;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        align="left"
+      >
+        <font face="Calibri"><b>S.No&nbsp; رقم سري</b> </font>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 22.1%;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        align="left"
+      >
+        <font face="Calibri"
+          ><b>Product &amp; Description&nbsp; وصف / اسم المنتج </b>
+        </font>
+      </td>
+      <td
+        align="right"
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 4.5%;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+      >
+        <font face="Calibri"><b>Qty&nbsp; كمية</b> </font>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 6%;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        align="right"
+      >
+        <font face="Calibri"><b>Price&nbsp; سعر</b> </font>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 7%;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        align="right"
+      >
+        <font face="Calibri"><b>Discount&nbsp; تخفيض</b> </font>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 6.2%;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        align="right"
+      >
+        <font face="Calibri"><b>Tax %&nbsp; ضريبة</b> </font>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 5.9%;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        align="right"
+      >
+        <font face="Calibri"><b>Vat Amt&nbsp; قيمة الضريبة</b> </font>
+      </td>
+      <td
+        style="
+          font-size: 10pt;
+          color: black;
+          border-top: none;
+          padding: 5px 10px 5px 5px;
+          word-wrap: break-word;
+          width: 6%;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        align="right"
+      >
+        <font face="Calibri"><b>Amount&nbsp; كمية</b> </font>
+      </td>
+    </tr>
+  </thead>
+  <tbody id="lineitem">
+    <tr>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: left;
+          word-wrap: break-word;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        valign="top"
+      >
+        <font face="Calibri"
+          ><span id="tmp_item_qty">%SiNo%</span> <br />
+        </font>
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: left;
+          word-wrap: break-word;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        valign="top"
+      >
+        <font face="Calibri"
+          ><span id="tmp_item_qty"
+            >%ItemName% %SecItemName% %ItemDescription%&nbsp;</span
+          ><br />
+        </font>
+      </td>
+      <td
+        valign="top"
+        style="
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
+          padding: 10px 10px 5px;
+          text-align: right;
+          overflow-wrap: break-word;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+      >
+        <font face="Calibri"
+          ><span style="font-size: 9pt" id="tmp_item_qty">%ItemQty%<br /></span
+          ><font size="1"> %UsageUnit% </font>
+        </font>
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        valign="top"
+      >
+        <font face="Calibri"
+          ><span id="tmp_item_qty">%ItemRate%</span> <br />
+        </font>
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        valign="top"
+      >
+        <font face="Calibri"
+          ><span id="tmp_item_rate">%EntityDiscountAmount%</span> <br />
+        </font>
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        valign="top"
+      >
+        <font face="Calibri"
+          ><span id="tmp_item_rate">%ItemTaxPercent%</span> <br />
+        </font>
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          padding: 10px 10px 5px 10px;
+          text-align: right;
+          word-wrap: break-word;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        valign="top"
+      >
+        <font face="Calibri"
+          ><span id="tmp_item_rate">%ItemTaxAmount%</span> <br />
+        </font>
+      </td>
+      <td
+        style="
+          font-size: 9pt;
+          background-color: #ffffff;
+          color: #000000;
+          text-align: right;
+          padding: 10px 10px 10px 5px;
+          word-wrap: break-word;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+        valign="top"
+      >
+        <font face="Calibri"> %ItemAmount% <br /> </font>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="width: 100%; margin: 0">
+  <div style="width: 45%; font-size: 9pt; float: left">
+    <div style="white-space: pre-wrap"></div>
+  </div>
+  <div style="width: 100%; float: right">
+    <table
+      style="
+        font-size: 9pt;
+        color: #000000;
+        background-color: #ffffff;
+        border-spacing: 0;
+        border-collapse: collapse;
+        border-top: none;
+        margin: 0;
+        border-color: black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+      "
+      border="1"
+      cellspacing="0"
+      width="100%"
+    >
+      <tbody>
+        <tr style="height: 30px; font-size: 9pt; color: black; width: 100%">
+          <td style="border-top: none; border-bottom: none"></td>
+          <td
+            style="
+              border-top: none;
+              border-bottom: none;
+              width: 5%;
+              padding: 5px 10px 5px 0;
+              border-left: 1px solid black;
+              border-right: 1px solid black;
+            "
+            align="right"
+            valign="middle"
+          >
+            <font face="Calibri"
+              ><b
+                >Taxable Amount / <br />
+                المبلغ الخاضع للضريبة
+              </b>
+            </font>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="
+              border-top: none;
+              border-bottom: none;
+              width: 19.1%;
+              padding: 10px 10px 10px 5px;
+              border-left: 1px solid black;
+              border-right: 1px solid black;
+            "
+            align="right"
+            valign="middle"
+          >
+            <b>%InvoiceSubTotal%</b>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-top: none; width: 58.9%; border-bottom: none">
+            <font face="Calibri"> &nbsp; </font>
+            <h4 style="text-align: left; margin: 0px">
+              <font face="Calibri"
+                ><span style="font-size: 9pt">&nbsp;</span
+                ><font size="2">Amount in words: %TotalInWords%</font>
+              </font>
+            </h4>
+          </td>
+          <td
+            style="
+              border-left: 1px solid black;
+              border-bottom: 1 px solid black;
+              border-right: 1px solid black;
+              border-top: none;
+              width: 10%;
+              padding: 5px 10px 5px 0;
+            "
+            align="right"
+            valign="middle"
+          >
+            <font face="Calibri"
+              ><b
+                >VAT/ <br />
+                قيمة الضريبة
+              </b>
+            </font>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="
+              width: 10%;
+              border-top: none;
+              width: 5%;
+              padding: 10px 10px 10px 5px;
+              border-bottom: 1px solid black;
+              border-left: 1px solid black;
+              border-right: 1px solid black;
+            "
+            align="right"
+            valign="middle"
+          >
+            <font face="Calibri"><b>%TaxTotal%</b> </font>
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              border-bottom: 1px solid black;
+              border-left: 1px solid black;
+              border-right: 1px solid black;
+              border-top: none;
+            "
+          >
+            <font face="Calibri"> &nbsp; </font>
+          </td>
+          <td
+            style="
+              border-left: 1px solid black;
+              border-bottom: 1px solid black;
+              border-right: 1px solid black;
+              border-top: 1px solid black;
+              width: 21.2%;
+              padding: 5px 10px 5px 0;
+            "
+            align="right"
+            valign="middle"
+          >
+            <font face="Calibri"
+              ><b
+                >Total Amount/ <br />
+                المبلغ الإجمالي</b
+              >
+            </font>
+          </td>
+          <td
+            id="tmp_balance_due"
+            style="
+              border-top: 1px solid black;
+              border-bottom: 1px solid black;
+              border-top: none;
+              width: 5%;
+              padding: 10px 10px 10px 5px;
+            "
+            align="right"
+            valign="middle"
+          >
+            <b>%InvoiceTotal%</b>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <table
+        border="1"
+        style="
+          font-size: 10pt;
+          border-collapse: collapse;
+          width: 100%;
+          border-color: black;
+          border-left: 1px solid black;
+          border-top: none;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+        "
+      >
+        <tbody>
+          <tr>
+            <td
+              colspan="10"
+              style="border-right: 1 px solid black; border-top: none"
+            >
+              <p style="margin: 0; padding: 0; text-align: left">
+                <font face="Calibri">%Notes%</font>
+              </p>
+              <h4
+                style="
+                  background-color: rgb(240, 238, 115);
+                  width: 30%;
+                  height: 15px;
+                  margin: 0;
+                  padding: 0;
+                "
+              >
+                <font face="Calibri"
+                  ><font color="black">Our Bank details/تفاصيل الدعم</font>
+                </font>
+              </h4>
+              <p
+                style="
+                  margin: 0;
+                  padding: 9;
+                  font-size: smaller;
+                  text-align: left;
+                  margin-left: 0;
+                  padding-left: 0;
+                "
+              >
+                Account Name: DANA AL SHARQ FIRST CONTRACTING EST <br />
+                Bank Name: Saudi National Bank <br />Account Number at SNB:
+                01400017032500<br />International Account Number:
+                SA7110000001400017032500 (IBAN) <br />Swift Code: NCBKSAJE
+                <br />
+                <br>
+              </p>
+            
+              <div style="float: right; padding-right: 10px;">
+                <div style="text-align: right;">
+                  <h5 style="float: right">Authorized signatory</h5>
+                </div> 
+                <div style="padding-right: 10px; float: right">
+                  <img 
+                    alt=""
+                    src="https://i.imgur.com/PcLrws6.jpeg"
+                    style="padding-top: 0px; height: 75px; width: 95px"
+                  />
+                  <br> <br>
+                </div>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
